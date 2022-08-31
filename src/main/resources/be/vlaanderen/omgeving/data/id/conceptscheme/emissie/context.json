@@ -1,0 +1,43 @@
+{   "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "@id"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "theme" : {
+      "@id" : "http://www.w3.org/ns/dcat#theme",
+      "@type" : "@id"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "@language" : "nl"
+    },
+    "notation" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#notation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "altLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",
+      "@language" : "nl"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+      "@language" : "nl"
+    },
+    "member" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#member",
+      "@type" : "@id"
+    },
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "vlcs" : "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
+    "cm" : "https://data.omgeving.vlaanderen.be/id/concept/matrix/",
+    "com" : "https://data.omgeving.vlaanderen.be/id/collection/matrix/",
+    "dcat" : "http://www.w3.org/ns/dcat#",
+    "dct" : "http://purl.org/dc/terms/",
+    "dc" : "http://purl.org/dc/elements/1.1/",
+    "gemet" : "http://www.eionet.europa.eu/gemet/concept/"
+  }
