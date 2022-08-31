@@ -1,6 +1,6 @@
 {
   "@graph" : [ {
-    "@id" : "https://data.omgeving.vlaanderen.be/id/concept/emissie/diffuuse_emissie",
+    "@id" : "ce:diffuuse_emissie",
     "@type" : "skos:Concept",
     "definition" : {
       "@language" : "nl",
@@ -10,9 +10,10 @@
     "prefLabel" : {
       "@language" : "nl",
       "@value" : "Diffuuse emissie"
-    }
+    },
+    "topConceptOf" : "vlcs:emissie"
   }, {
-    "@id" : "https://data.omgeving.vlaanderen.be/id/concept/emissie/doorzet_emissie",
+    "@id" : "ce:doorzet_emissie",
     "@type" : "skos:Concept",
     "definition" : {
       "@language" : "nl",
@@ -22,9 +23,10 @@
     "prefLabel" : {
       "@language" : "nl",
       "@value" : "Doorzet emissie"
-    }
+    },
+    "topConceptOf" : "vlcs:emissie"
   }, {
-    "@id" : "https://data.omgeving.vlaanderen.be/id/concept/emissie/fakkel_emissie",
+    "@id" : "ce:fakkel_emissie",
     "@type" : "skos:Concept",
     "definition" : {
       "@language" : "nl",
@@ -34,9 +36,10 @@
     "prefLabel" : {
       "@language" : "nl",
       "@value" : "Fakkel emissie"
-    }
+    },
+    "topConceptOf" : "vlcs:emissie"
   }, {
-    "@id" : "https://data.omgeving.vlaanderen.be/id/concept/emissie/fugitieve_emissie",
+    "@id" : "ce:fugitieve_emissie",
     "@type" : "skos:Concept",
     "definition" : {
       "@language" : "nl",
@@ -46,9 +49,10 @@
     "prefLabel" : {
       "@language" : "nl",
       "@value" : "Fugitieve emissie"
-    }
+    },
+    "topConceptOf" : "vlcs:emissie"
   }, {
-    "@id" : "https://data.omgeving.vlaanderen.be/id/concept/emissie/geleide_emissie",
+    "@id" : "ce:geleide_emissie",
     "@type" : "skos:Concept",
     "definition" : {
       "@language" : "nl",
@@ -58,9 +62,10 @@
     "prefLabel" : {
       "@language" : "nl",
       "@value" : "Geleide emissie"
-    }
+    },
+    "topConceptOf" : "vlcs:emissie"
   }, {
-    "@id" : "https://data.omgeving.vlaanderen.be/id/concept/emissie/lekverliezen",
+    "@id" : "ce:lekverliezen",
     "@type" : "skos:Concept",
     "definition" : {
       "@language" : "nl",
@@ -70,16 +75,22 @@
     "prefLabel" : {
       "@language" : "nl",
       "@value" : "Lekverliezen"
-    }
+    },
+    "topConceptOf" : "vlcs:emissie"
   }, {
     "@id" : "vlcs:emissie",
     "@type" : "skos:ConceptScheme",
+    "hasTopConcept" : [ "ce:diffuuse_emissie", "ce:geleide_emissie", "ce:fugitieve_emissie", "ce:doorzet_emissie", "ce:fakkel_emissie", "ce:lekverliezen" ],
     "prefLabel" : {
       "@language" : "nl",
       "@value" : "Codelijst types emissie."
     }
   } ],
   "@context" : {
+    "topConceptOf" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+      "@type" : "@id"
+    },
     "prefLabel" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
     },
@@ -90,14 +101,18 @@
     "definition" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#definition"
     },
-    "com" : "https://data.omgeving.vlaanderen.be/id/collection/matrix/",
+    "hasTopConcept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+      "@type" : "@id"
+    },
     "vlcs" : "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
+    "ce" : "https://data.omgeving.vlaanderen.be/id/concept/emissie/",
     "dct" : "http://purl.org/dc/terms/",
     "gemet" : "http://www.eionet.europa.eu/gemet/concept/",
     "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "coe" : "https://data.omgeving.vlaanderen.be/id/collection/emissie/",
     "skos" : "http://www.w3.org/2004/02/skos/core#",
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
-    "cm" : "https://data.omgeving.vlaanderen.be/id/concept/matrix/",
     "dcat" : "http://www.w3.org/ns/dcat#",
     "dc" : "http://purl.org/dc/elements/1.1/"
   }

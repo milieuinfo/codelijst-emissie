@@ -1,49 +1,50 @@
-@prefix com:   <https://data.omgeving.vlaanderen.be/id/collection/matrix/> .
 @prefix vlcs:  <https://data.omgeving.vlaanderen.be/id/conceptscheme/> .
+@prefix ce:    <https://data.omgeving.vlaanderen.be/id/concept/emissie/> .
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix gemet: <http://www.eionet.europa.eu/gemet/concept/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix coe:   <https://data.omgeving.vlaanderen.be/id/collection/emissie/> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix cm:    <https://data.omgeving.vlaanderen.be/id/concept/matrix/> .
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-<https://data.omgeving.vlaanderen.be/id/concept/emissie/doorzet_emissie>
-        a                skos:Concept ;
-        skos:definition  "TO DO"@nl ;
-        skos:inScheme    vlcs:emissie ;
-        skos:prefLabel   "Doorzet emissie"@nl .
+ce:doorzet_emissie  a      skos:Concept ;
+        skos:definition    "TO DO"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Doorzet emissie"@nl ;
+        skos:topConceptOf  vlcs:emissie .
 
-<https://data.omgeving.vlaanderen.be/id/concept/emissie/fugitieve_emissie>
-        a                skos:Concept ;
-        skos:definition  "Emissies van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."@nl ;
-        skos:inScheme    vlcs:emissie ;
-        skos:prefLabel   "Fugitieve emissie"@nl .
+ce:fugitieve_emissie  a    skos:Concept ;
+        skos:definition    "Emissies van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Fugitieve emissie"@nl ;
+        skos:topConceptOf  vlcs:emissie .
 
-vlcs:emissie  a         skos:ConceptScheme ;
-        skos:prefLabel  "Codelijst types emissie."@nl .
+vlcs:emissie  a             skos:ConceptScheme ;
+        skos:hasTopConcept  ce:lekverliezen , ce:fakkel_emissie , ce:doorzet_emissie , ce:fugitieve_emissie , ce:geleide_emissie , ce:diffuuse_emissie ;
+        skos:prefLabel      "Codelijst types emissie."@nl .
 
-<https://data.omgeving.vlaanderen.be/id/concept/emissie/diffuuse_emissie>
-        a                skos:Concept ;
-        skos:definition  "Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen."@nl ;
-        skos:inScheme    vlcs:emissie ;
-        skos:prefLabel   "Diffuuse emissie"@nl .
+ce:diffuuse_emissie  a     skos:Concept ;
+        skos:definition    "Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen."@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Diffuuse emissie"@nl ;
+        skos:topConceptOf  vlcs:emissie .
 
-<https://data.omgeving.vlaanderen.be/id/concept/emissie/fakkel_emissie>
-        a                skos:Concept ;
-        skos:definition  "TO DO"@nl ;
-        skos:inScheme    vlcs:emissie ;
-        skos:prefLabel   "Fakkel emissie"@nl .
+ce:fakkel_emissie  a       skos:Concept ;
+        skos:definition    "TO DO"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Fakkel emissie"@nl ;
+        skos:topConceptOf  vlcs:emissie .
 
-<https://data.omgeving.vlaanderen.be/id/concept/emissie/lekverliezen>
-        a                skos:Concept ;
-        skos:definition  "TO DO"@nl ;
-        skos:inScheme    vlcs:emissie ;
-        skos:prefLabel   "Lekverliezen"@nl .
+ce:lekverliezen  a         skos:Concept ;
+        skos:definition    "TO DO"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Lekverliezen"@nl ;
+        skos:topConceptOf  vlcs:emissie .
 
-<https://data.omgeving.vlaanderen.be/id/concept/emissie/geleide_emissie>
-        a                skos:Concept ;
-        skos:definition  "Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald. "@nl ;
-        skos:inScheme    vlcs:emissie ;
-        skos:prefLabel   "Geleide emissie"@nl .
+ce:geleide_emissie  a      skos:Concept ;
+        skos:definition    "Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald. "@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Geleide emissie"@nl ;
+        skos:topConceptOf  vlcs:emissie .
