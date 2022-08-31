@@ -1,7 +1,7 @@
 # codelijst-emissie
 
 ## Samenvatting
-Lijst van types emissie, zoals die binnen het kader van het OSLO thema omgeving is opgesteld  en tools om deze lijst te beheren en om te zetten naar webformaten.
+Lijst van types emissie, zoals die binnen het kader van het OSLO thema omgeving is opgesteld en tools om deze lijst te beheren en om te zetten naar webformaten.
 
 
 ## Gebruik
