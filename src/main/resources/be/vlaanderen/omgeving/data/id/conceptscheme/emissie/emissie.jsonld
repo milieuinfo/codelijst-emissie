@@ -1,5 +1,33 @@
 {
   "@graph" : [ {
+    "@id" : "ce:abnormale_emissie",
+    "@type" : "skos:Concept",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Abnormale emissie"
+    },
+    "topConceptOf" : "vlcs:emissie"
+  }, {
+    "@id" : "ce:andere_niet_geleide_emissie",
+    "@type" : "skos:Concept",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Andere niet-geleide emissie"
+    },
+    "topConceptOf" : "vlcs:emissie"
+  }, {
+    "@id" : "ce:diffuus",
+    "@type" : "skos:Concept",
+    "definition" : {
+      "@language" : "nl",
+      "@value" : "Een diffuse emissie, in een andere vorm dan vanuit een puntbron, in de lucht, bodem of water, alsmede in enig product."
+    },
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Diffuse emissie"
+    },
+    "topConceptOf" : "vlcs:emissie"
+  }, {
     "@id" : "ce:diffuuse_emissie",
     "@type" : "skos:Concept",
     "definition" : {
@@ -26,6 +54,14 @@
     },
     "topConceptOf" : "vlcs:emissie"
   }, {
+    "@id" : "ce:doorzetemissie",
+    "@type" : "skos:Concept",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Doorzet emissie"
+    },
+    "topConceptOf" : "vlcs:emissie"
+  }, {
     "@id" : "ce:fakkel_emissie",
     "@type" : "skos:Concept",
     "definition" : {
@@ -39,6 +75,14 @@
     },
     "topConceptOf" : "vlcs:emissie"
   }, {
+    "@id" : "ce:fakkelemissie",
+    "@type" : "skos:Concept",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Fakkelemissie"
+    },
+    "topConceptOf" : "vlcs:emissie"
+  }, {
     "@id" : "ce:fugitieve_emissie",
     "@type" : "skos:Concept",
     "definition" : {
@@ -49,6 +93,30 @@
     "prefLabel" : {
       "@language" : "nl",
       "@value" : "Fugitieve emissie"
+    },
+    "topConceptOf" : "vlcs:emissie"
+  }, {
+    "@id" : "ce:fugitieve_missie",
+    "@type" : "skos:Concept",
+    "definition" : {
+      "@language" : "nl",
+      "@value" : "De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."
+    },
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Fugitieve emissie"
+    },
+    "topConceptOf" : "vlcs:emissie"
+  }, {
+    "@id" : "ce:geleid",
+    "@type" : "skos:Concept",
+    "definition" : {
+      "@language" : "nl",
+      "@value" : "Een emissie afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald."
+    },
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Geleide emissie"
     },
     "topConceptOf" : "vlcs:emissie"
   }, {
@@ -80,7 +148,11 @@
   }, {
     "@id" : "vlcs:emissie",
     "@type" : "skos:ConceptScheme",
-    "hasTopConcept" : [ "ce:diffuuse_emissie", "ce:geleide_emissie", "ce:fugitieve_emissie", "ce:doorzet_emissie", "ce:fakkel_emissie", "ce:lekverliezen" ],
+    "definition" : {
+      "@language" : "nl",
+      "@value" : "Een type van een emissie"
+    },
+    "hasTopConcept" : [ "ce:geleide_emissie", "ce:fakkelemissie", "ce:doorzet_emissie", "ce:diffuuse_emissie", "ce:doorzetemissie", "ce:abnormale_emissie", "ce:lekverliezen", "ce:diffuus", "ce:fugitieve_missie", "ce:fugitieve_emissie", "ce:fakkel_emissie", "ce:geleid", "ce:andere_niet_geleide_emissie" ],
     "prefLabel" : {
       "@language" : "nl",
       "@value" : "Codelijst types emissie."

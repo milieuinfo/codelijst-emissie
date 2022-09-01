@@ -22,7 +22,8 @@ ce:fugitieve_emissie  a    skos:Concept ;
         skos:topConceptOf  vlcs:emissie .
 
 vlcs:emissie  a             skos:ConceptScheme ;
-        skos:hasTopConcept  ce:lekverliezen , ce:fakkel_emissie , ce:doorzet_emissie , ce:fugitieve_emissie , ce:geleide_emissie , ce:diffuuse_emissie ;
+        skos:definition     "Een type van een emissie"@nl ;
+        skos:hasTopConcept  ce:geleide_emissie , ce:fakkelemissie , ce:doorzet_emissie , ce:diffuuse_emissie , ce:doorzetemissie , ce:abnormale_emissie , ce:lekverliezen , ce:fugitieve_missie , ce:diffuus , ce:fugitieve_emissie , ce:geleid , ce:fakkel_emissie , ce:andere_niet_geleide_emissie ;
         skos:prefLabel      "Codelijst types emissie."@nl .
 
 ce:diffuuse_emissie  a     skos:Concept ;
@@ -31,10 +32,20 @@ ce:diffuuse_emissie  a     skos:Concept ;
         skos:prefLabel     "Diffuuse emissie"@nl ;
         skos:topConceptOf  vlcs:emissie .
 
+ce:fugitieve_missie  a     skos:Concept ;
+        skos:definition    "De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."@nl ;
+        skos:prefLabel     "Fugitieve emissie"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
 ce:fakkel_emissie  a       skos:Concept ;
         skos:definition    "TO DO"@nl ;
         skos:inScheme      vlcs:emissie ;
         skos:prefLabel     "Fakkel emissie"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+ce:diffuus  a              skos:Concept ;
+        skos:definition    "Een diffuse emissie, in een andere vorm dan vanuit een puntbron, in de lucht, bodem of water, alsmede in enig product."@nl ;
+        skos:prefLabel     "Diffuse emissie"@nl ;
         skos:topConceptOf  vlcs:emissie .
 
 ce:lekverliezen  a         skos:Concept ;
@@ -43,8 +54,30 @@ ce:lekverliezen  a         skos:Concept ;
         skos:prefLabel     "Lekverliezen"@nl ;
         skos:topConceptOf  vlcs:emissie .
 
+ce:geleid  a               skos:Concept ;
+        skos:definition    "Een emissie afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald."@nl ;
+        skos:prefLabel     "Geleide emissie"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+ce:abnormale_emissie  a    skos:Concept ;
+        skos:prefLabel     "Abnormale emissie"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+ce:doorzetemissie  a       skos:Concept ;
+        skos:prefLabel     "Doorzet emissie"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
 ce:geleide_emissie  a      skos:Concept ;
         skos:definition    "Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald. "@nl ;
         skos:inScheme      vlcs:emissie ;
         skos:prefLabel     "Geleide emissie"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+ce:andere_niet_geleide_emissie
+        a                  skos:Concept ;
+        skos:prefLabel     "Andere niet-geleide emissie"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+ce:fakkelemissie  a        skos:Concept ;
+        skos:prefLabel     "Fakkelemissie"@nl ;
         skos:topConceptOf  vlcs:emissie .
