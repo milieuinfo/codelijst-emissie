@@ -2,7 +2,6 @@
 library(tidyr)
 library(dplyr)
 library(jsonlite)
-setwd("/home/gehau/git/codelijst-emissie/src/main/R")
 
 df <- read.csv(file = "../resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.csv", sep=",", na.strings=c("","NA"))
 tco <- subset(df, topConceptOf == 'https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie' ,
