@@ -31,8 +31,7 @@ df <- df %>%
 setDT(df)[type == "dcat:Dataset", owl.versionInfo := version_next_release]
 setDT(df)[type == "dcat:Distribution", owl.versionInfo := version_next_release]
 write.csv(df,"../resources/be/vlaanderen/omgeving/data/id/dataset/codelijst-emissie/catalog.csv", row.names = FALSE)
-df <- df %>%
-  mutate_all(list(~ str_c("", .)))
+
 for(col in 1:ncol(df)) {   # for-loop over columns
   df <- df %>%
     separate_rows(col, sep = "\\|")
