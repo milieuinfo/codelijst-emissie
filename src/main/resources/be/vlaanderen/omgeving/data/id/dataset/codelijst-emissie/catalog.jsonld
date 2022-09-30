@@ -42,11 +42,12 @@
       "@language" : "nl",
       "@value" : "Thesaurus emissietypes"
     },
+    "rootResource" : "omg_conceptscheme:codelijst-emissie",
     "label" : {
       "@language" : "nl",
       "@value" : "Dataset Codelijst Emissie"
     },
-    "versionInfo" : "1.0.3",
+    "versionInfo" : "1.0.4",
     "contactPoint" : "omg_vcard:helpdesk",
     "distribution" : [ "omg_distribution:codelijst-emissie_csv", "omg_distribution:codelijst-emissie_jsonld", "omg_distribution:codelijst-emissie_ttl" ],
     "landingPage" : "https://data.omgeving.vlaanderen.be/doc/catalog/codelijst.html",
@@ -75,10 +76,10 @@
       "@language" : "nl",
       "@value" : "Codelijst Emissie, in text/csv formaat."
     },
-    "versionInfo" : "1.0.3",
+    "versionInfo" : "1.0.4",
     "accessURL" : "https://github.com/milieuinfo/codelijst-emissie.git",
     "compressFormat" : "http://www.iana.org/assignments/media-types/application/gzip",
-    "downloadURL" : "https://github.com/milieuinfo/codelijst-emissie/raw/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.csv",
+    "downloadURL" : "https://raw.githubusercontent.com/milieuinfo/codelijst-emissie/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.csv",
     "mediaType" : "https://www.iana.org/assignments/media-types/text/csv",
     "page" : "https://data.omgeving.vlaanderen.be/doc/distribution/codelijst-emissie_csv.html"
   }, {
@@ -104,10 +105,10 @@
       "@language" : "nl",
       "@value" : "Codelijst Emissie, in jsonld rdf-formaat."
     },
-    "versionInfo" : "1.0.3",
+    "versionInfo" : "1.0.4",
     "accessURL" : "https://github.com/milieuinfo/codelijst-emissie.git",
     "compressFormat" : "http://www.iana.org/assignments/media-types/application/gzip",
-    "downloadURL" : "https://github.com/milieuinfo/codelijst-emissie/raw/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.jsonld",
+    "downloadURL" : "https://raw.githubusercontent.com/milieuinfo/codelijst-emissie/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.jsonld",
     "mediaType" : "https://www.iana.org/assignments/media-types/application/ld+json",
     "page" : "https://data.omgeving.vlaanderen.be/doc/distribution/codelijst-emissie_jsonld.html"
   }, {
@@ -133,10 +134,10 @@
       "@language" : "nl",
       "@value" : "Codelijst Emissie, in Turtle rdf-formaat."
     },
-    "versionInfo" : "1.0.3",
+    "versionInfo" : "1.0.4",
     "accessURL" : "https://github.com/milieuinfo/codelijst-emissie.git",
     "compressFormat" : "http://www.iana.org/assignments/media-types/application/gzip",
-    "downloadURL" : "https://github.com/milieuinfo/codelijst-emissie/raw/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.ttl",
+    "downloadURL" : "https://raw.githubusercontent.com/milieuinfo/codelijst-emissie/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.ttl",
     "mediaType" : "https://www.iana.org/assignments/media-types/text/turtle",
     "page" : "https://data.omgeving.vlaanderen.be/doc/distribution/codelijst-emissie_ttl.html"
   } ],
@@ -148,6 +149,9 @@
     "accrualPeriodicity" : {
       "@id" : "http://purl.org/dc/terms/accrualPeriodicity",
       "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
     "theme" : {
       "@id" : "http://www.w3.org/ns/dcat#theme",
@@ -182,15 +186,16 @@
     "identifier" : {
       "@id" : "http://purl.org/dc/elements/1.1/identifier"
     },
-    "versionInfo" : {
-      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
-    },
     "spatial" : {
       "@id" : "http://purl.org/dc/terms/spatial",
       "@type" : "@id"
     },
     "temporal" : {
       "@id" : "http://purl.org/dc/terms/temporal",
+      "@type" : "@id"
+    },
+    "rootResource" : {
+      "@id" : "http://rdfs.org/ns/void#rootResource",
       "@type" : "@id"
     },
     "landingPage" : {
@@ -216,16 +221,16 @@
       "@id" : "http://www.w3.org/ns/dcat#accessURL",
       "@type" : "@id"
     },
-    "downloadURL" : {
-      "@id" : "http://www.w3.org/ns/dcat#downloadURL",
-      "@type" : "@id"
-    },
     "mediaType" : {
       "@id" : "http://www.w3.org/ns/dcat#mediaType",
       "@type" : "@id"
     },
     "format" : {
       "@id" : "http://purl.org/dc/terms/format",
+      "@type" : "@id"
+    },
+    "downloadURL" : {
+      "@id" : "http://www.w3.org/ns/dcat#downloadURL",
       "@type" : "@id"
     },
     "compressFormat" : {
