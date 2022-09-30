@@ -42,12 +42,12 @@
       "@language" : "nl",
       "@value" : "Thesaurus emissietypes"
     },
-    "rootResource" : "omg_conceptscheme:codelijst-emissie",
+    "rootResource" : "omg_conceptscheme:emissie",
     "label" : {
       "@language" : "nl",
       "@value" : "Dataset Codelijst Emissie"
     },
-    "versionInfo" : "1.0.4",
+    "versionInfo" : "1.0.5",
     "contactPoint" : "omg_vcard:helpdesk",
     "distribution" : [ "omg_distribution:codelijst-emissie_csv", "omg_distribution:codelijst-emissie_jsonld", "omg_distribution:codelijst-emissie_ttl" ],
     "landingPage" : "https://data.omgeving.vlaanderen.be/doc/catalog/codelijst.html",
@@ -76,7 +76,7 @@
       "@language" : "nl",
       "@value" : "Codelijst Emissie, in text/csv formaat."
     },
-    "versionInfo" : "1.0.4",
+    "versionInfo" : "1.0.5",
     "accessURL" : "https://github.com/milieuinfo/codelijst-emissie.git",
     "compressFormat" : "http://www.iana.org/assignments/media-types/application/gzip",
     "downloadURL" : "https://raw.githubusercontent.com/milieuinfo/codelijst-emissie/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.csv",
@@ -105,7 +105,7 @@
       "@language" : "nl",
       "@value" : "Codelijst Emissie, in jsonld rdf-formaat."
     },
-    "versionInfo" : "1.0.4",
+    "versionInfo" : "1.0.5",
     "accessURL" : "https://github.com/milieuinfo/codelijst-emissie.git",
     "compressFormat" : "http://www.iana.org/assignments/media-types/application/gzip",
     "downloadURL" : "https://raw.githubusercontent.com/milieuinfo/codelijst-emissie/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.jsonld",
@@ -134,7 +134,7 @@
       "@language" : "nl",
       "@value" : "Codelijst Emissie, in Turtle rdf-formaat."
     },
-    "versionInfo" : "1.0.4",
+    "versionInfo" : "1.0.5",
     "accessURL" : "https://github.com/milieuinfo/codelijst-emissie.git",
     "compressFormat" : "http://www.iana.org/assignments/media-types/application/gzip",
     "downloadURL" : "https://raw.githubusercontent.com/milieuinfo/codelijst-emissie/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.ttl",
@@ -149,9 +149,6 @@
     "accrualPeriodicity" : {
       "@id" : "http://purl.org/dc/terms/accrualPeriodicity",
       "@type" : "@id"
-    },
-    "versionInfo" : {
-      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
     "theme" : {
       "@id" : "http://www.w3.org/ns/dcat#theme",
@@ -194,10 +191,6 @@
       "@id" : "http://purl.org/dc/terms/temporal",
       "@type" : "@id"
     },
-    "rootResource" : {
-      "@id" : "http://rdfs.org/ns/void#rootResource",
-      "@type" : "@id"
-    },
     "landingPage" : {
       "@id" : "http://www.w3.org/ns/dcat#landingPage",
       "@type" : "@id"
@@ -206,15 +199,22 @@
       "@id" : "http://purl.org/dc/terms/issued",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
-    "description" : {
-      "@id" : "http://purl.org/dc/terms/description"
-    },
     "page" : {
       "@id" : "http://xmlns.com/foaf/0.1/page",
       "@type" : "@id"
     },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
     "accessRights" : {
       "@id" : "http://purl.org/dc/terms/accessRights",
+      "@type" : "@id"
+    },
+    "rootResource" : {
+      "@id" : "http://rdfs.org/ns/void#rootResource",
       "@type" : "@id"
     },
     "accessURL" : {
