@@ -1,0 +1,27 @@
+@prefix ce:    <https://data.omgeving.vlaanderen.be/id/concept/emissie/> .
+@prefix coe:   <https://data.omgeving.vlaanderen.be/id/collection/emissie/> .
+@prefix cs:    <https://data.vlaanderen.be/ns/chemische_stof#> .
+@prefix csc:   <https://data.omgeving.vlaanderen.be/id/concept/chemische_stof/> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix dbp:   <http://dbpedia.org/property/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix gemet: <http://www.eionet.europa.eu/gemet/concept/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vlcs:  <https://data.omgeving.vlaanderen.be/id/conceptscheme/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+skos:ConceptScheme  rdf:type  "skos:ConceptScheme" ;
+        skos:definition     "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" ;
+        skos:hasTopConcept  skos:Concept ;
+        skos:prefLabel      "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" .
+
+skos:Concept  rdf:type     "skos:Concept" ;
+        skos:definition    "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" ;
+        skos:inScheme      skos:ConceptScheme ;
+        skos:prefLabel     "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" ;
+        skos:topConceptOf  skos:ConceptScheme .

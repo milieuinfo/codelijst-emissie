@@ -47,7 +47,7 @@
       "@language" : "nl",
       "@value" : "Dataset Codelijst Emissie"
     },
-    "versionInfo" : "1.0.5",
+    "versionInfo" : "1.0.6",
     "contactPoint" : "omg_vcard:helpdesk",
     "distribution" : [ "omg_distribution:codelijst-emissie_csv", "omg_distribution:codelijst-emissie_jsonld", "omg_distribution:codelijst-emissie_ttl" ],
     "landingPage" : "https://data.omgeving.vlaanderen.be/doc/catalog/codelijst.html",
@@ -76,7 +76,7 @@
       "@language" : "nl",
       "@value" : "Codelijst Emissie, in text/csv formaat."
     },
-    "versionInfo" : "1.0.5",
+    "versionInfo" : "1.0.6",
     "accessURL" : "https://github.com/milieuinfo/codelijst-emissie.git",
     "compressFormat" : "http://www.iana.org/assignments/media-types/application/gzip",
     "downloadURL" : "https://raw.githubusercontent.com/milieuinfo/codelijst-emissie/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.csv",
@@ -105,7 +105,7 @@
       "@language" : "nl",
       "@value" : "Codelijst Emissie, in jsonld rdf-formaat."
     },
-    "versionInfo" : "1.0.5",
+    "versionInfo" : "1.0.6",
     "accessURL" : "https://github.com/milieuinfo/codelijst-emissie.git",
     "compressFormat" : "http://www.iana.org/assignments/media-types/application/gzip",
     "downloadURL" : "https://raw.githubusercontent.com/milieuinfo/codelijst-emissie/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.jsonld",
@@ -134,7 +134,7 @@
       "@language" : "nl",
       "@value" : "Codelijst Emissie, in Turtle rdf-formaat."
     },
-    "versionInfo" : "1.0.5",
+    "versionInfo" : "1.0.6",
     "accessURL" : "https://github.com/milieuinfo/codelijst-emissie.git",
     "compressFormat" : "http://www.iana.org/assignments/media-types/application/gzip",
     "downloadURL" : "https://raw.githubusercontent.com/milieuinfo/codelijst-emissie/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.ttl",
@@ -165,6 +165,9 @@
     "license" : {
       "@id" : "http://purl.org/dc/terms/license",
       "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
     "alternative" : {
       "@id" : "http://purl.org/dc/terms/alternative"
@@ -199,15 +202,12 @@
       "@id" : "http://purl.org/dc/terms/issued",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
-    "page" : {
-      "@id" : "http://xmlns.com/foaf/0.1/page",
-      "@type" : "@id"
-    },
     "description" : {
       "@id" : "http://purl.org/dc/terms/description"
     },
-    "versionInfo" : {
-      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    "page" : {
+      "@id" : "http://xmlns.com/foaf/0.1/page",
+      "@type" : "@id"
     },
     "accessRights" : {
       "@id" : "http://purl.org/dc/terms/accessRights",

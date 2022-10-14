@@ -1,0 +1,10 @@
+digraph { 
+ node [ fontname="DejaVu Sans" ] ; 
+	node0 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:hasTopConcept</font> > ] ;
+	node1 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:topConceptOf</font> > ] ;
+	node1 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:inScheme</font> > ] ;
+# http://www.w3.org/2004/02/skos/core#ConceptScheme node0
+node0 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>ConceptScheme</B></td></tr><tr><td href='http://www.w3.org/2004/02/skos/core#ConceptScheme' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.w3.org/2004/02/skos/core#ConceptScheme</font></td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;skos:ConceptScheme&quot;</td></tr><tr><td align='left'>skos:definition</td><td align='left'>&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&quot;</td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&quot;</td></tr></table> > ] 
+# http://www.w3.org/2004/02/skos/core#Concept node1
+node1 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Concept</B></td></tr><tr><td href='http://www.w3.org/2004/02/skos/core#Concept' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.w3.org/2004/02/skos/core#Concept</font></td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;skos:Concept&quot;</td></tr><tr><td align='left'>skos:definition</td><td align='left'>&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&quot;</td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&quot;</td></tr></table> > ] 
+}
