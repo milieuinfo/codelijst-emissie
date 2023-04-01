@@ -15,6 +15,10 @@
       "@id" : "http://purl.org/dc/terms/hasVersion",
       "@type" : "@id"
     },
+    "isVersionOf" : {
+      "@id" : "http://purl.org/dc/terms/isVersionOf",
+      "@type" : "@id"
+    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
       "@language" : "nl"
@@ -123,7 +127,6 @@
     "downloadLocation" : {
       "@id" : "http://spdx.org/rdf/terms#downloadLocation",
       "@type" : "@id"
-     // "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     "relationshipType_packageOf" : {
       "@id" : "http://spdx.org/rdf/terms#relationshipType_packageOf",

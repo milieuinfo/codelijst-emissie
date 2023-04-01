@@ -1,191 +1,266 @@
 {
-  "@graph" : [ {
-    "@id" : "ce:abnormale_emissie",
-    "@type" : "skos:Concept",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "Abnormale emissie"
-    },
-    "topConceptOf" : "vlcs:emissie"
-  }, {
-    "@id" : "ce:andere_niet_geleide_emissie",
-    "@type" : "skos:Concept",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "Andere niet-geleide emissie"
-    },
-    "topConceptOf" : "vlcs:emissie"
-  }, {
-    "@id" : "ce:diffuus",
-    "@type" : "skos:Concept",
-    "definition" : {
-      "@language" : "nl",
-      "@value" : "Een diffuse emissie, in een andere vorm dan vanuit een puntbron, in de lucht, bodem of water, alsmede in enig product."
-    },
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "Diffuse emissie"
-    },
-    "topConceptOf" : "vlcs:emissie"
-  }, {
-    "@id" : "ce:diffuuse_emissie",
-    "@type" : "skos:Concept",
-    "definition" : {
-      "@language" : "nl",
-      "@value" : "Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen."
-    },
-    "inScheme" : "vlcs:emissie",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "Diffuuse emissie"
-    },
-    "topConceptOf" : "vlcs:emissie"
-  }, {
-    "@id" : "ce:doorzet_emissie",
-    "@type" : "skos:Concept",
-    "definition" : {
-      "@language" : "nl",
-      "@value" : "TO DO"
-    },
-    "inScheme" : "vlcs:emissie",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "Doorzet emissie"
-    },
-    "topConceptOf" : "vlcs:emissie"
-  }, {
-    "@id" : "ce:doorzetemissie",
-    "@type" : "skos:Concept",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "Doorzet emissie"
-    },
-    "topConceptOf" : "vlcs:emissie"
-  }, {
-    "@id" : "ce:fakkel_emissie",
-    "@type" : "skos:Concept",
-    "definition" : {
-      "@language" : "nl",
-      "@value" : "TO DO"
-    },
-    "inScheme" : "vlcs:emissie",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "Fakkel emissie"
-    },
-    "topConceptOf" : "vlcs:emissie"
-  }, {
-    "@id" : "ce:fakkelemissie",
-    "@type" : "skos:Concept",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "Fakkelemissie"
-    },
-    "topConceptOf" : "vlcs:emissie"
-  }, {
-    "@id" : "ce:fugitieve_emissie",
-    "@type" : "skos:Concept",
-    "definition" : {
-      "@language" : "nl",
-      "@value" : "Emissies van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."
-    },
-    "inScheme" : "vlcs:emissie",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "Fugitieve emissie"
-    },
-    "topConceptOf" : "vlcs:emissie"
-  }, {
-    "@id" : "ce:fugitieve_missie",
-    "@type" : "skos:Concept",
-    "definition" : {
-      "@language" : "nl",
-      "@value" : "De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."
-    },
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "Fugitieve emissie"
-    },
-    "topConceptOf" : "vlcs:emissie"
-  }, {
-    "@id" : "ce:geleid",
-    "@type" : "skos:Concept",
-    "definition" : {
-      "@language" : "nl",
-      "@value" : "Een emissie afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald."
-    },
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "Geleide emissie"
-    },
-    "topConceptOf" : "vlcs:emissie"
-  }, {
-    "@id" : "ce:geleide_emissie",
-    "@type" : "skos:Concept",
-    "definition" : {
-      "@language" : "nl",
-      "@value" : "Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald. "
-    },
-    "inScheme" : "vlcs:emissie",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "Geleide emissie"
-    },
-    "topConceptOf" : "vlcs:emissie"
-  }, {
-    "@id" : "ce:lekverliezen",
-    "@type" : "skos:Concept",
-    "definition" : {
-      "@language" : "nl",
-      "@value" : "TO DO"
-    },
-    "inScheme" : "vlcs:emissie",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "Lekverliezen"
-    },
-    "topConceptOf" : "vlcs:emissie"
-  }, {
-    "@id" : "vlcs:emissie",
-    "@type" : "skos:ConceptScheme",
-    "definition" : {
-      "@language" : "nl",
-      "@value" : "Een type van een emissie"
-    },
-    "hasTopConcept" : [ "ce:geleide_emissie", "ce:fakkelemissie", "ce:doorzet_emissie", "ce:diffuuse_emissie", "ce:doorzetemissie", "ce:abnormale_emissie", "ce:lekverliezen", "ce:diffuus", "ce:fugitieve_missie", "ce:fugitieve_emissie", "ce:fakkel_emissie", "ce:geleid", "ce:andere_niet_geleide_emissie" ],
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "Codelijst types emissie."
+    "@graph": [
+        {
+            "@id": "ce:doorzet_emissie",
+            "skos:topConceptOf": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Doorzet emissie"
+            },
+            "skos:inScheme": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:definition": {
+                "@language": "nl",
+                "@value": "TO DO"
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "vlcs:emissie",
+            "skos:hasTopConcept": [
+                {
+                    "@id": "ce:geleide_emissie"
+                },
+                {
+                    "@id": "ce:fakkelemissie"
+                },
+                {
+                    "@id": "ce:doorzet_emissie"
+                },
+                {
+                    "@id": "ce:diffuuse_emissie"
+                },
+                {
+                    "@id": "ce:doorzetemissie"
+                },
+                {
+                    "@id": "ce:abnormale_emissie"
+                },
+                {
+                    "@id": "ce:lekverliezen"
+                },
+                {
+                    "@id": "ce:diffuus"
+                },
+                {
+                    "@id": "ce:fugitieve_missie"
+                },
+                {
+                    "@id": "ce:fugitieve_emissie"
+                },
+                {
+                    "@id": "ce:fakkel_emissie"
+                },
+                {
+                    "@id": "ce:geleid"
+                },
+                {
+                    "@id": "ce:andere_niet_geleide_emissie"
+                }
+            ],
+            "@type": "skos:ConceptScheme",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Codelijst types emissie."
+            },
+            "skos:definition": {
+                "@language": "nl",
+                "@value": "Een type van een emissie"
+            }
+        },
+        {
+            "@id": "ce:fugitieve_emissie",
+            "skos:topConceptOf": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Fugitieve emissie"
+            },
+            "skos:inScheme": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:definition": {
+                "@language": "nl",
+                "@value": "Emissies van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ce:geleide_emissie",
+            "skos:topConceptOf": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Geleide emissie"
+            },
+            "skos:inScheme": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:definition": {
+                "@language": "nl",
+                "@value": "Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald. "
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ce:fakkelemissie",
+            "skos:topConceptOf": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Fakkelemissie"
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ce:diffuuse_emissie",
+            "skos:topConceptOf": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Diffuuse emissie"
+            },
+            "skos:inScheme": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:definition": {
+                "@language": "nl",
+                "@value": "Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen."
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ce:doorzetemissie",
+            "skos:topConceptOf": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Doorzet emissie"
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ce:abnormale_emissie",
+            "skos:topConceptOf": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Abnormale emissie"
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ce:lekverliezen",
+            "skos:topConceptOf": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Lekverliezen"
+            },
+            "skos:inScheme": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:definition": {
+                "@language": "nl",
+                "@value": "TO DO"
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ce:diffuus",
+            "skos:topConceptOf": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Diffuse emissie"
+            },
+            "skos:definition": {
+                "@language": "nl",
+                "@value": "Een diffuse emissie, in een andere vorm dan vanuit een puntbron, in de lucht, bodem of water, alsmede in enig product."
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ce:fugitieve_missie",
+            "skos:topConceptOf": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Fugitieve emissie"
+            },
+            "skos:definition": {
+                "@language": "nl",
+                "@value": "De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ce:fakkel_emissie",
+            "skos:topConceptOf": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Fakkel emissie"
+            },
+            "skos:inScheme": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:definition": {
+                "@language": "nl",
+                "@value": "TO DO"
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ce:geleid",
+            "skos:topConceptOf": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Geleide emissie"
+            },
+            "skos:definition": {
+                "@language": "nl",
+                "@value": "Een emissie afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald."
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ce:andere_niet_geleide_emissie",
+            "skos:topConceptOf": {
+                "@id": "vlcs:emissie"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Andere niet-geleide emissie"
+            },
+            "@type": "skos:Concept"
+        }
+    ],
+    "@context": {
+        "vlcs": "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
+        "ce": "https://data.omgeving.vlaanderen.be/id/concept/emissie/",
+        "dct": "http://purl.org/dc/terms/",
+        "gemet": "http://www.eionet.europa.eu/gemet/concept/",
+        "coe": "https://data.omgeving.vlaanderen.be/id/collection/emissie/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dc": "http://purl.org/dc/elements/1.1/"
     }
-  } ],
-  "@context" : {
-    "topConceptOf" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
-      "@type" : "@id"
-    },
-    "prefLabel" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
-    },
-    "inScheme" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
-      "@type" : "@id"
-    },
-    "definition" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
-    },
-    "hasTopConcept" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
-      "@type" : "@id"
-    },
-    "vlcs" : "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
-    "ce" : "https://data.omgeving.vlaanderen.be/id/concept/emissie/",
-    "dct" : "http://purl.org/dc/terms/",
-    "gemet" : "http://www.eionet.europa.eu/gemet/concept/",
-    "xsd" : "http://www.w3.org/2001/XMLSchema#",
-    "coe" : "https://data.omgeving.vlaanderen.be/id/collection/emissie/",
-    "skos" : "http://www.w3.org/2004/02/skos/core#",
-    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
-    "dcat" : "http://www.w3.org/ns/dcat#",
-    "dc" : "http://purl.org/dc/elements/1.1/"
-  }
 }

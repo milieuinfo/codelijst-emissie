@@ -4,6 +4,8 @@ library(dplyr)
 library(jsonlite)
 library(stringr)
 #setwd('/home/gehau/git/codelijst-emissie/src/main/R')
+#setwd('/Users/pieter/work/git/codelijst-emissie/src/main/R')
+
 
 # functie om dataframe om te zetten naar jsonld
 to_jsonld <- function(dataframe) {
