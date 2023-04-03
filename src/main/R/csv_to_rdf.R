@@ -120,14 +120,14 @@ csv_source_pad = config$skos$csv_source
 # lees csv
 df <- read.csv(file = csv_source_pad, sep=",", na.strings=c("","NA"))
 
-df <- df %>% arrange(id_column)
-csv_distributie <- paste(dataset_distributie_pad, distributie_naam, ".csv", sep="")
-write.csv(collapse_df_on_pipe(df, id_column),csv_distributie, row.names = FALSE, na='', fileEncoding='UTF-8')
-
 df <- expand_df_on_pipe(df)%>%
   members_from_collection(id_column)%>%
   hasTopConcept_from_topConceptOf(id_column) ##%>%
   ## narrower_from_broader(id_column)
+
+df <- df %>% arrange(id_column)
+csv_distributie <- paste(dataset_distributie_pad, distributie_naam, ".csv", sep="")
+write.csv(collapse_df_on_pipe(df, id_column),csv_distributie, row.names = FALSE, na='', fileEncoding='UTF-8')
 
 # write volledig geexpandeerde csv, ter controle, deze wordt niet aan versiebeheer toegevoegd
 test_distributie <- paste(dataset_distributie_pad, "temp_test_separate_rows.csv", sep="")
