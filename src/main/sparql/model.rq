@@ -1,4 +1,4 @@
-#  sparql --results=TTL --data=../resources/be/vlaanderen/omgeving/data/id/conceptscheme/bioindicator/bioindicator.ttl  --query ../sparql/model.rq  > /tmp/test.ttl
+#  sparql --results=TTL --data=../resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.ttl  --query ../sparql/model.rq  > /tmp/test.ttl
 #  rdf2dot  /tmp/test.ttl | dot -Tpng > /tmp/test.png
 
 
