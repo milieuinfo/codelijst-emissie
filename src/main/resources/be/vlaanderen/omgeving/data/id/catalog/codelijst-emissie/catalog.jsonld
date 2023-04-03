@@ -1,6 +1,102 @@
 {
     "@graph": [
         {
+            "@id": "omg_distribution:codelijst-emissie.1.1.3.emissie.jsonld",
+            "dcterms:format": {
+                "@id": "file_type:JSON_LD"
+            },
+            "dcat:accessURL": {
+                "@id": "https://github.com/milieuinfo/codelijst-emissie.git"
+            },
+            "dcterms:issued": {
+                "@value": "2023-04-03",
+                "@type": "xsd:date"
+            },
+            "dcat:downloadURL": {
+                "@id": "https://datasets.omgeving.vlaanderen.be/be.vlaanderen.omgeving.data.id.distribution.codelijst-emissie.1.1.3.emissie.jsonld"
+            },
+            "dcat:mediaType": {
+                "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
+            },
+            "dcterms:identifier": {
+                "@id": "omg_distribution:codelijst-emissie.1.1.3.emissie.jsonld"
+            },
+            "dc:identifier": "be.vlaanderen.omgeving.data.id.distribution.codelijst-emissie.1.1.3.emissie.jsonld",
+            "dcat:compressFormat": {
+                "@id": "http://www.iana.org/assignments/media-types/application/gzip"
+            },
+            "dcterms:accessRights": {
+                "@id": "access_right:PUBLIC"
+            },
+            "@type": "dcat:Distribution",
+            "dcterms:title": {
+                "@language": "nl",
+                "@value": "Codelijst emissie in jsonld rdf-formaat."
+            },
+            "dcterms:description": {
+                "@language": "nl",
+                "@value": "Codelijst emissie, geserialiseerd in een jsonld bestand."
+            },
+            "foaf:page": {
+                "@id": "https://data.omgeving.vlaanderen.be/doc/distribution/codelijst-emissie.1.1.3.emissie.jsonld.html"
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Codelijst emissie, in jsonld rdf-formaat."
+            },
+            "dcterms:rightsHolder": {
+                "@id": "ovo:OVO003751"
+            }
+        },
+        {
+            "@id": "omg_distribution:codelijst-emissie.1.1.3.emissie.ttl",
+            "dcterms:description": {
+                "@language": "nl",
+                "@value": "Codelijst emissie, geserialiseerd in Turtle bestand."
+            },
+            "@type": "dcat:Distribution",
+            "dcterms:identifier": {
+                "@id": "omg_distribution:codelijst-emissie.1.1.3.emissie.ttl"
+            },
+            "dcterms:rightsHolder": {
+                "@id": "ovo:OVO003751"
+            },
+            "dcat:accessURL": {
+                "@id": "https://github.com/milieuinfo/codelijst-emissie.git"
+            },
+            "dc:identifier": "be.vlaanderen.omgeving.data.id.distribution.codelijst-emissie.1.1.3.emissie.ttl",
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Codelijst emissie, in Turtle rdf-formaat."
+            },
+            "dcat:downloadURL": {
+                "@id": "https://datasets.omgeving.vlaanderen.be/be.vlaanderen.omgeving.data.id.distribution.codelijst-emissie.1.1.3.emissie.ttl"
+            },
+            "foaf:page": {
+                "@id": "https://data.omgeving.vlaanderen.be/doc/distribution/codelijst-emissie.1.1.3.emissie.ttl.html"
+            },
+            "dcterms:title": {
+                "@language": "nl",
+                "@value": "Codelijst emissie in Turtle rdf-formaat."
+            },
+            "dcterms:format": {
+                "@id": "file_type:RDF_TURTLE"
+            },
+            "dcat:mediaType": {
+                "@id": "https://www.iana.org/assignments/media-types/text/turtle"
+            },
+            "dcterms:accessRights": {
+                "@id": "access_right:PUBLIC"
+            },
+            "dcat:compressFormat": {
+                "@id": "http://www.iana.org/assignments/media-types/application/gzip"
+            },
+            "dcterms:issued": {
+                "@value": "2023-04-03",
+                "@type": "xsd:date"
+            }
+        },
+        {
             "@id": "omg_dataset:codelijst-emissie",
             "dcterms:rightsHolder": {
                 "@id": "ovo:OVO003751"
@@ -40,9 +136,14 @@
             "dcterms:license": {
                 "@id": "http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0"
             },
-            "dcterms:hasVersion": {
-                "@id": "omg_dataset:codelijst-emissie.1.1.2"
-            },
+            "dcterms:hasVersion": [
+                {
+                    "@id": "omg_dataset:codelijst-emissie.1.1.2"
+                },
+                {
+                    "@id": "omg_dataset:codelijst-emissie.1.1.3"
+                }
+            ],
             "dcterms:description": {
                 "@language": "nl",
                 "@value": "Deze dataset bevat een lijst van emissietypes, die gebruikt worden binnen het beleidsdomein omgeving van de Vlaamse Overheid en zoals die initieel binnen het kader van het OSLO thema omgeving is opgesteld."
@@ -190,6 +291,118 @@
             "void:rootResource": {
                 "@id": "omg_conceptscheme:emissie"
             }
+        },
+        {
+            "@id": "omg_dataset:codelijst-emissie.1.1.3",
+            "dcterms:accrualPeriodicity": {
+                "@id": "frequency:IRREG"
+            },
+            "dcat:theme": [
+                {
+                    "@id": "datatheme_be:ENVI"
+                },
+                {
+                    "@id": "eurovoc:2407"
+                },
+                {
+                    "@id": "datatheme_eu:ENVI"
+                },
+                {
+                    "@id": "gemet:10087"
+                }
+            ],
+            "void:rootResource": {
+                "@id": "omg_conceptscheme:emissie"
+            },
+            "@type": "dcat:Dataset",
+            "owl:versionInfo": "1.1.3",
+            "dcterms:issued": {
+                "@value": "2023-04-03",
+                "@type": "xsd:date"
+            },
+            "dcterms:isVersionOf": {
+                "@id": "omg_dataset:codelijst-emissie"
+            },
+            "dcterms:spatial": [
+                {
+                    "@id": "country:BEL"
+                },
+                {
+                    "@id": "https://www.geonames.org/3337388/flanders"
+                }
+            ],
+            "dcterms:license": {
+                "@id": "http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0"
+            },
+            "dcat:distribution": [
+                {
+                    "@id": "omg_distribution:codelijst-emissie.1.1.3.emissie.ttl"
+                },
+                {
+                    "@id": "omg_distribution:codelijst-emissie.1.1.3.emissie.csv"
+                },
+                {
+                    "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst-emissie.1.1.3"
+                },
+                {
+                    "@id": "omg_distribution:codelijst-emissie.1.1.3.emissie.jsonld"
+                }
+            ],
+            "dcterms:identifier": {
+                "@id": "omg_dataset:codelijst-emissie.1.1.3"
+            },
+            "dc:identifier": "be.vlaanderen.omgeving.data.id.dataset.codelijst-emissie.1.1.3",
+            "foaf:page": {
+                "@id": "https://data.omgeving.vlaanderen.be/doc/dataset/codelijst-emissie.1.1.3.html"
+            },
+            "dcterms:alternative": {
+                "@language": "nl",
+                "@value": "Dataset codelijst emissie"
+            },
+            "dcterms:description": {
+                "@language": "nl",
+                "@value": "Deze dataset bevat een lijst van emissietypes, die gebruikt worden binnen het beleidsdomein omgeving van de Vlaamse Overheid en zoals die initieel binnen het kader van het OSLO thema omgeving is opgesteld."
+            },
+            "dcat:contactPoint": {
+                "@id": "omg_id:vcard/helpdesk"
+            },
+            "dcterms:publisher": {
+                "@id": "ovo:OVO003323"
+            },
+            "dcterms:language": {
+                "@id": "language:NLD"
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Codelijst emissie (1.1.3)"
+            },
+            "dc:language": {
+                "@language": "nl",
+                "@value": "nl"
+            },
+            "dcterms:title": {
+                "@language": "nl",
+                "@value": "Codelijst emissie"
+            },
+            "dcat:landingPage": {
+                "@id": "https://data.omgeving.vlaanderen.be/doc/catalog/codelijst.html"
+            },
+            "dcterms:rightsHolder": {
+                "@id": "ovo:OVO003751"
+            },
+            "dcterms:accessRights": {
+                "@id": "access_right:PUBLIC"
+            },
+            "dcterms:temporal": {
+                "@id": "omg_id:periodoftime/dataset_omg"
+            }
+        },
+        {
+            "@id": "omg_catalog:codelijst",
+            "dcat:dataset": {
+                "@id": "omg_dataset:codelijst-emissie"
+            },
+            "@type": "dcat:Catalog"
         },
         {
             "@id": "omg_distribution:codelijst-emissie.1.1.2.emissie.jsonld",
@@ -381,11 +594,97 @@
             }
         },
         {
-            "@id": "omg_catalog:codelijst",
-            "dcat:dataset": {
-                "@id": "omg_dataset:codelijst-emissie"
+            "@id": "omg_distribution:codelijst-emissie.1.1.3.emissie.csv",
+            "dcterms:title": {
+                "@language": "nl",
+                "@value": "Codelijst emissie in text/csv formaat."
             },
-            "@type": "dcat:Catalog"
+            "dcterms:issued": {
+                "@value": "2023-04-03",
+                "@type": "xsd:date"
+            },
+            "foaf:page": {
+                "@id": "https://data.omgeving.vlaanderen.be/doc/distribution/codelijst-emissie.1.1.3.emissie.csv.html"
+            },
+            "dcat:downloadURL": {
+                "@id": "https://datasets.omgeving.vlaanderen.be/be.vlaanderen.omgeving.data.id.distribution.codelijst-emissie.1.1.3.emissie.csv"
+            },
+            "dcat:compressFormat": {
+                "@id": "http://www.iana.org/assignments/media-types/application/gzip"
+            },
+            "dcterms:format": {
+                "@id": "file_type:CSV"
+            },
+            "@type": "dcat:Distribution",
+            "dc:identifier": "be.vlaanderen.omgeving.data.id.distribution.codelijst-emissie.1.1.3.emissie.csv",
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Codelijst emissie, in text/csv formaat."
+            },
+            "dcterms:rightsHolder": {
+                "@id": "ovo:OVO003751"
+            },
+            "dcat:mediaType": {
+                "@id": "https://www.iana.org/assignments/media-types/text/csv"
+            },
+            "dcat:accessURL": {
+                "@id": "https://github.com/milieuinfo/codelijst-emissie.git"
+            },
+            "dcterms:identifier": {
+                "@id": "omg_distribution:codelijst-emissie.1.1.3.emissie.csv"
+            },
+            "dcterms:accessRights": {
+                "@id": "access_right:PUBLIC"
+            },
+            "dcterms:description": {
+                "@language": "nl",
+                "@value": "Codelijst emissie, geserialiseerd in csv tabelformaat."
+            }
+        },
+        {
+            "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst-emissie.1.1.3",
+            "dcterms:accessRights": {
+                "@id": "access_right:PUBLIC"
+            },
+            "spdx:packageFileName": "codelijst-emissie-1.1.3.jar",
+            "spdx:versionInfo": "1.1.3",
+            "@type": [
+                "dcat:Distribution",
+                "spdx:Package"
+            ],
+            "spdx:downloadLocation": {
+                "@id": "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-emissie/1.1.3/codelijst-emissie-1.1.3.jar"
+            },
+            "dcterms:issued": {
+                "@value": "2023-04-03",
+                "@type": "xsd:date"
+            },
+            "dcterms:rightsHolder": {
+                "@id": "ovo:OVO003751"
+            },
+            "dcterms:title": {
+                "@language": "nl",
+                "@value": "Codelijst emissie in jar-formaat."
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Package codelijst-emissie"
+            },
+            "dcat:downloadURL": {
+                "@id": "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-emissie/1.1.3/codelijst-emissie-1.1.3.jar"
+            },
+            "dc:identifier": "be.vlaanderen.omgeving.data.id.graph.codelijst-emissie.1.1.3",
+            "spdx:packageName": "be.vlaanderen.omgeving.data.id.graph.codelijst-emissie",
+            "dcterms:format": {
+                "@id": "file_type:JAR"
+            },
+            "dcterms:description": {
+                "@language": "nl",
+                "@value": "Codelijst emissie, Jar maven package."
+            },
+            "dcterms:identifier": {
+                "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst-emissie.1.1.3"
+            }
         }
     ],
     "@context": {
