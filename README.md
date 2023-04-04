@@ -6,18 +6,39 @@ Lijst van types emissie, zoals die binnen het kader van het OSLO thema omgeving 
 
 ## Gebruik
 
-- Voeg een definitie van een nieuw type emissie toe aan $PROJECT_HOME/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.csv
+### Versienummer in .pom bestand
+Het version element in het .pom bestand bevat het 'SNAPSHOT'-versienummer van de release waarop gewerkt wordt (e.g. 1.0.0-SNAPSHOT).
+### Wijzigingen aan de codelijst doorvoeren
+Pas het bron CSV bestand van de codelijst aan ($PROJECT_HOME/src/main/resources/source/codelijst_source.csv).
 
-### csv naar rdf
+Bv. Voeg een definitie van een nieuw type emissie toe.
+
+### Genereer de verspreidingsvormen van de codelijst
+#### csv naar rdf
 ```
 cd $PROJECT_HOME/src/main/bash
-bash csv_to_rfd.sh
+bash csv_to_rdf.sh
 ```
-### rdf naar csv
+#### rdf naar csv
 ```
 cd $PROJECT_HOME/src/main/sparql
 sparql --results=CSV --data=../resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.ttl  --query rdf_to_csv.rq > ../resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.csv
 ```
+### Commit/push de wijzigingen
+Geef steeds een duidelijke commit boodschap mee (i.e vermelding van de gelogde issues die zijn opgelost).
+
+### Voorbereiding release
+#### Valideer het versienummer
+Het version element in het .pom bestand moet op het 'SNAPSHOT'-versienummer van de komende release staan.
+#### Genereer en voeg de metadata van de nieuwe codelijst versie toe
+```
+cd $PROJECT_HOME/src/main/bash
+bash dcat-from-csv.sh
+```
+#### Commit/push metadata en eventuele andere wijzigingen
+
+### Release
+Release het overeenkomstige codelijstenproject in Bamboo
 
 ## Dependencies
 
