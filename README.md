@@ -6,10 +6,11 @@ Lijst van types emissie, zoals die binnen het kader van het OSLO thema omgeving 
 
 ## Gebruik
 
-### Versienummer in .pom bestand
-Het version element in het .pom bestand bevat het 'SNAPSHOT'-versienummer van de release waarop gewerkt wordt (e.g. 1.0.0-SNAPSHOT).
+### Versienummer in pom.xml bestand
+Het version element in het pom.xml bestand bevat het 'SNAPSHOT'-versienummer van de nieuwe release waarop gewerkt wordt.
+Bv. '1.0.0' is de huidige release en '2.0.0' is de nieuwe release waarop gewerkt wordt. Dan is '2.0.0-SNAPSHOT' het 'SNAPSHOT'-versienummer in het pom.xml bestand.  
 ### Wijzigingen aan de codelijst doorvoeren
-Pas het bron CSV bestand van de codelijst aan ($PROJECT_HOME/src/main/resources/source/codelijst_source.csv).
+Pas het bron CSV bestand van de codelijst aan (src/main/resources/source/codelijst_source.csv).
 
 Bv. Voeg een definitie van een nieuw type emissie toe.
 
@@ -29,7 +30,8 @@ Geef steeds een duidelijke commit boodschap mee (i.e vermelding van de gelogde i
 
 ### Voorbereiding release
 #### Valideer het versienummer
-Het version element in het .pom bestand moet op het 'SNAPSHOT'-versienummer van de komende release staan.
+Het version element in het pom.xml bestand staat op het 'SNAPSHOT'-versienummer van de komende release staan.
+Bv. '2.0.0' is het versienummer van de nieuwe release. Dan is '2.0.0-SNAPSHOT' het 'SNAPSHOT'-versienummer in het pom.xml bestand.
 #### Genereer en voeg de metadata van de nieuwe codelijst versie toe
 ```
 cd $PROJECT_HOME/src/main/bash
@@ -38,7 +40,7 @@ bash dcat-from-csv.sh
 #### Commit/push metadata en eventuele andere wijzigingen
 
 ### Release
-Release het overeenkomstige codelijstenproject in Bamboo
+Release het overeenkomstige codelijsten project in Bamboo. Zie https://www.milieuinfo.be/bamboo/browse/CODELIJST
 
 ## Dependencies
 
