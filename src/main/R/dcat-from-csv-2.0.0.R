@@ -8,7 +8,7 @@ library(stringr)
 library(yaml)
 library(R.utils)
 
-#setwd('/home/gehau/git/codelijst-emissie/src/main/R')
+setwd('/home/gehau/git/codelijst-emissie/src/main/R')
 #setwd('/Users/pieter/work/git/codelijst-emissie/src/main/R')
 
 ##### FUNCTIES

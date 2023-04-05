@@ -6,7 +6,7 @@ library(stringr)
 library(data.table)
 library(yaml)
 
-#setwd('/home/gehau/git/codelijst-emissie/src/main/R')
+setwd('/home/gehau/git/codelijst-emissie/src/main/R')
 #setwd('/Users/pieter/work/git/codelijst-emissie/src/main/R')
 
 to_jsonld <- function(dataframe) {

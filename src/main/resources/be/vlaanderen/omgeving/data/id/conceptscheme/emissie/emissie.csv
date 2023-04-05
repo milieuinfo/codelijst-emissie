@@ -1,15 +1,10 @@
 "uri","type","notation","prefLabel","definition","collection","inScheme","theme","seeAlso","topConceptOf","hasTopConcept"
 "ce:abnormale_emissie","skos:Concept",,"Abnormale emissie",,,,,,"vlcs:emissie",
 "ce:andere_niet_geleide_emissie","skos:Concept",,"Andere niet-geleide emissie",,,,,,"vlcs:emissie",
-"ce:diffuus","skos:Concept",,"Diffuse emissie","Een diffuse emissie, in een andere vorm dan vanuit een puntbron, in de lucht, bodem of water, alsmede in enig product.",,,,,"vlcs:emissie",
-"ce:diffuuse_emissie","skos:Concept",,"Diffuuse emissie","Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen.",,"vlcs:emissie",,,"vlcs:emissie",
+"ce:diffuse_emissie","skos:Concept",,"Diffuse emissie","Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen.",,"vlcs:emissie",,,"vlcs:emissie",
 "ce:doorzet_emissie","skos:Concept",,"Doorzet emissie","TO DO",,"vlcs:emissie",,,"vlcs:emissie",
-"ce:doorzetemissie","skos:Concept",,"Doorzet emissie",,,,,,"vlcs:emissie",
 "ce:fakkel_emissie","skos:Concept",,"Fakkel emissie","TO DO",,"vlcs:emissie",,,"vlcs:emissie",
-"ce:fakkelemissie","skos:Concept",,"Fakkelemissie",,,,,,"vlcs:emissie",
-"ce:fugitieve_emissie","skos:Concept",,"Fugitieve emissie","Emissies van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen).",,"vlcs:emissie",,,"vlcs:emissie",
-"ce:fugitieve_missie","skos:Concept",,"Fugitieve emissie","De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen).",,,,,"vlcs:emissie",
-"ce:geleid","skos:Concept",,"Geleide emissie","Een emissie afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald.",,,,,"vlcs:emissie",
+"ce:fugitieve_emissie","skos:Concept",,"Fugitieve emissie","De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen).",,,,,"vlcs:emissie",
 "ce:geleide_emissie","skos:Concept",,"Geleide emissie","Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald. ",,"vlcs:emissie",,,"vlcs:emissie",
 "ce:lekverliezen","skos:Concept",,"Lekverliezen","TO DO",,"vlcs:emissie",,,"vlcs:emissie",
-"vlcs:emissie","skos:ConceptScheme",,"Codelijst types emissie.","Een type van een emissie",,,,,,"ce:abnormale_emissie|ce:andere_niet_geleide_emissie|ce:diffuus|ce:diffuuse_emissie|ce:doorzet_emissie|ce:doorzetemissie|ce:fakkel_emissie|ce:fakkelemissie|ce:fugitieve_emissie|ce:fugitieve_missie|ce:geleid|ce:geleide_emissie|ce:lekverliezen"
+"vlcs:emissie","skos:ConceptScheme",,"Codelijst types emissie.","Een type van een emissie",,,,,,"ce:abnormale_emissie|ce:andere_niet_geleide_emissie|ce:diffuse_emissie|ce:doorzet_emissie|ce:fakkel_emissie|ce:fugitieve_emissie|ce:geleide_emissie|ce:lekverliezen"
