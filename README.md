@@ -8,7 +8,7 @@ Lijst van types emissie, zoals die binnen het kader van het OSLO thema omgeving 
 
 ### Versienummer in pom.xml bestand
 Het version element in het pom.xml bestand bevat het 'SNAPSHOT'-versienummer van de nieuwe release waarop gewerkt wordt.
-Bv. '1.0.0' is de huidige release en '2.0.0' is de nieuwe release waarop gewerkt wordt. Dan is '2.0.0-SNAPSHOT' het 'SNAPSHOT'-versienummer in het pom.xml bestand.  
+Bv. '1.0.0' is de huidige release en '2.0.0' is de nieuwe release waarop gewerkt wordt. Dan is '2.0.0-SNAPSHOT' het versienummer in het pom.xml bestand.  
 ### Wijzigingen aan de codelijst doorvoeren
 Pas het bron CSV bestand van de codelijst aan (src/main/resources/source/codelijst_source.csv).
 
@@ -30,8 +30,8 @@ Geef steeds een duidelijke commit boodschap mee (i.e vermelding van de gelogde i
 
 ### Voorbereiding release
 #### Valideer het versienummer
-Het version element in het pom.xml bestand staat op het 'SNAPSHOT'-versienummer van de komende release staan.
-Bv. '2.0.0' is het versienummer van de nieuwe release. Dan is '2.0.0-SNAPSHOT' het 'SNAPSHOT'-versienummer in het pom.xml bestand.
+Het version element in het pom.xml bestand staat op het 'SNAPSHOT'-versienummer van de komende release.
+Bv. '2.0.0' is het versienummer van de nieuwe release. Dan is '2.0.0-SNAPSHOT' het versienummer in het pom.xml bestand.
 #### Genereer en voeg de metadata van de nieuwe codelijst versie toe
 ```
 cd $PROJECT_HOME/src/main/bash
