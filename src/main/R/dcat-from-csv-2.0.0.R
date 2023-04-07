@@ -181,8 +181,7 @@ write_rdf_distributies  <- function(df, distributie_pad, distributie_naam) {
     mutate_all(~na_if(., ''))
 
   df <- expand_df_on_pipe(df)%>%
-      hasVersion_from_isVersionOf()%>%
-      rename_columns()
+      hasVersion_from_isVersionOf()
 
   ### JSONLD RDF UIT DATAFRAME
   df_in_json <- to_jsonld(df)

@@ -16,6 +16,7 @@
                 "@language": "nl",
                 "@value": "TO DO"
             },
+            "dc:identifier": "doorzet_emissie",
             "@type": "skos:Concept"
         },
         {
@@ -46,6 +47,7 @@
                     "@id": "ce:diffuse_emissie"
                 }
             ],
+            "dc:identifier": "emissie",
             "@type": "skos:ConceptScheme",
             "skos:prefLabel": {
                 "@language": "nl",
@@ -72,6 +74,7 @@
                 "@language": "nl",
                 "@value": "Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen."
             },
+            "dc:identifier": "diffuse_emissie",
             "@type": "skos:Concept"
         },
         {
@@ -87,6 +90,7 @@
                 "@language": "nl",
                 "@value": "De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."
             },
+            "dc:identifier": "fugitieve_emissie",
             "@type": "skos:Concept"
         },
         {
@@ -105,6 +109,7 @@
                 "@language": "nl",
                 "@value": "Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald. "
             },
+            "dc:identifier": "geleide_emissie",
             "@type": "skos:Concept"
         },
         {
@@ -116,6 +121,7 @@
                 "@language": "nl",
                 "@value": "Abnormale emissie"
             },
+            "dc:identifier": "abnormale_emissie",
             "@type": "skos:Concept"
         },
         {
@@ -134,6 +140,7 @@
                 "@language": "nl",
                 "@value": "TO DO"
             },
+            "dc:identifier": "lekverliezen",
             "@type": "skos:Concept"
         },
         {
@@ -152,6 +159,7 @@
                 "@language": "nl",
                 "@value": "TO DO"
             },
+            "dc:identifier": "fakkel_emissie",
             "@type": "skos:Concept"
         },
         {
@@ -163,6 +171,7 @@
                 "@language": "nl",
                 "@value": "Andere niet-geleide emissie"
             },
+            "dc:identifier": "andere_niet_geleide_emissie",
             "@type": "skos:Concept"
         }
     ],

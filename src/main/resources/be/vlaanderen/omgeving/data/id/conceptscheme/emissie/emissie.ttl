@@ -10,44 +10,52 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 ce:doorzet_emissie  a      skos:Concept ;
+        dc:identifier      "doorzet_emissie" ;
         skos:definition    "TO DO"@nl ;
         skos:inScheme      vlcs:emissie ;
         skos:prefLabel     "Doorzet emissie"@nl ;
         skos:topConceptOf  vlcs:emissie .
 
 ce:diffuse_emissie  a      skos:Concept ;
+        dc:identifier      "diffuse_emissie" ;
         skos:definition    "Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen."@nl ;
         skos:inScheme      vlcs:emissie ;
         skos:prefLabel     "Diffuse emissie"@nl ;
         skos:topConceptOf  vlcs:emissie .
 
 ce:fugitieve_emissie  a    skos:Concept ;
+        dc:identifier      "fugitieve_emissie" ;
         skos:definition    "De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."@nl ;
         skos:prefLabel     "Fugitieve emissie"@nl ;
         skos:topConceptOf  vlcs:emissie .
 
 vlcs:emissie  a             skos:ConceptScheme ;
+        dc:identifier       "emissie" ;
         skos:definition     "Een type van een emissie"@nl ;
         skos:hasTopConcept  ce:geleide_emissie , ce:doorzet_emissie , ce:abnormale_emissie , ce:lekverliezen , ce:fugitieve_emissie , ce:fakkel_emissie , ce:andere_niet_geleide_emissie , ce:diffuse_emissie ;
         skos:prefLabel      "Codelijst types emissie."@nl .
 
 ce:fakkel_emissie  a       skos:Concept ;
+        dc:identifier      "fakkel_emissie" ;
         skos:definition    "TO DO"@nl ;
         skos:inScheme      vlcs:emissie ;
         skos:prefLabel     "Fakkel emissie"@nl ;
         skos:topConceptOf  vlcs:emissie .
 
 ce:lekverliezen  a         skos:Concept ;
+        dc:identifier      "lekverliezen" ;
         skos:definition    "TO DO"@nl ;
         skos:inScheme      vlcs:emissie ;
         skos:prefLabel     "Lekverliezen"@nl ;
         skos:topConceptOf  vlcs:emissie .
 
 ce:abnormale_emissie  a    skos:Concept ;
+        dc:identifier      "abnormale_emissie" ;
         skos:prefLabel     "Abnormale emissie"@nl ;
         skos:topConceptOf  vlcs:emissie .
 
 ce:geleide_emissie  a      skos:Concept ;
+        dc:identifier      "geleide_emissie" ;
         skos:definition    "Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald. "@nl ;
         skos:inScheme      vlcs:emissie ;
         skos:prefLabel     "Geleide emissie"@nl ;
@@ -55,5 +63,6 @@ ce:geleide_emissie  a      skos:Concept ;
 
 ce:andere_niet_geleide_emissie
         a                  skos:Concept ;
+        dc:identifier      "andere_niet_geleide_emissie" ;
         skos:prefLabel     "Andere niet-geleide emissie"@nl ;
         skos:topConceptOf  vlcs:emissie .

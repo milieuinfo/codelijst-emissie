@@ -1,0 +1,30 @@
+## Lijst alle concepten met de gewenste attributen op, hun parent(s) en de eventuele collectie(s) waartoe ze behoren.
+## 1 rij per concept
+
+prefix skos:  <http://www.w3.org/2004/02/skos/core#>
+prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+prefix dc: <http://purl.org/dc/elements/1.1/>
+prefix dcterms: <http://purl.org/dc/terms/>
+
+select distinct
+?uri
+?lokaleid
+(?notation as ?code)
+?preflabel
+(GROUP_CONCAT(distinct ?alt; separator='|') as ?altlabel)
+(GROUP_CONCAT(distinct ?def; separator='|') as ?definitie)
+(GROUP_CONCAT(distinct ?broader; separator='|') as ?parent)
+(GROUP_CONCAT(distinct ?collection; separator='|') as ?collectie)
+where
+{ ?uri a skos:Concept.
+  ## ?uri skos:inScheme <...>.
+optional {?uri dc:identifier ?lokaleid }
+optional {?uri skos:notation ?notation }
+optional {?uri skos:prefLabel ?preflabel. FILTER(lang(?preflabel)='nl')}
+optional {?uri skos:altLabel ?alt. FILTER(lang(?alt)='nl') }
+optional {?uri skos:definition ?def. FILTER(lang(?def)='nl') }
+optional {?uri skos:broader ?broader }
+optional {?collection a skos:Collection. ?collection skos:member ?uri .}
+}
+GROUP BY ?uri ?lokaleid ?notation ?preflabel
+ORDER BY ?uri

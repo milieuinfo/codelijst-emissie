@@ -1,5 +1,7 @@
 {
-    "source" : {
+  "id": "@id",
+  "type": "@type",
+  "source" : {
       "@id" : "http://purl.org/dc/terms/source",
       "@type" : "@id"
     },
