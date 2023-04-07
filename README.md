@@ -52,6 +52,7 @@ Bij de release van een nieuwe codelijst versie moet de gepaste metadata voor die
 - src/main/resources/source/catalog_source.csv
 
 Het dataset_source.csv bestand wordt als template gebruikt om de metadata van de dataset en van een nieuwe codelijst versie te genereren. Het catalog_source.csv bestand bevat de metadata van de dataset en al zijn codelijst versies die in de catalogus gepubliceerd moeten worden. Dit is een "evolutief" bestand waar de metadata van een nieuwe versie telkens aan wordt toegevoegd.
+
 Het script genereert op basis van deze 2 bron bestanden de gepaste DCAT metadata bestanden voor de codelijst en zijn verschillende versies.
 
 Normaliter moet het bron bestand dataset_source.csv maar eenmalig worden opgesteld en aangepast voor de codelijst.
