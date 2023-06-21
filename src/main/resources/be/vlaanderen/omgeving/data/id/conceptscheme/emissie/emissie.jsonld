@@ -167,7 +167,7 @@
             "@type": "skos:ConceptScheme",
             "skos:prefLabel": {
                 "@language": "nl",
-                "@value": "Codelijst types emissie."
+                "@value": "Codelijst emissietype."
             },
             "skos:definition": {
                 "@language": "nl",

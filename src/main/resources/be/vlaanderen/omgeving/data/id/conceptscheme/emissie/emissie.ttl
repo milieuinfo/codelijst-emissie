@@ -211,4 +211,4 @@ vlcs:emissie  a             skos:ConceptScheme ;
         dc:identifier       "emissie" ;
         skos:definition     "Een type van een emissie"@nl ;
         skos:hasTopConcept  cli:oppompend , cl:grondwater , ce:geleide_emissie , cl:rwzi , cl:rwa , cl:intern , cl:oopw , ce:doorzet_emissie , ce:abnormale_emissie , cl:ow_indir , ce:lekverliezen , cl:irwzi , cl:brutolozing , cli:transfer , ce:fugitieve_emissie , cl:ow_dir , cl:abnormalelozing , cl:septischmateriaal , ce:fakkel_emissie , ce:andere_niet_geleide_emissie , cl:iwzi , ce:diffuse_emissie , cl:geleidelozing , cl:nettolozing , cli:lozend ;
-        skos:prefLabel      "Codelijst types emissie."@nl .
+        skos:prefLabel      "Codelijst emissietype."@nl .

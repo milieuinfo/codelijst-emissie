@@ -7,7 +7,7 @@ skos:Concept,ce:fakkel_emissie,fakkel_emissie,,Fakkel emissie,TO DO,coe:emissie,
 skos:Concept,ce:fugitieve_emissie,fugitieve_emissie,,Fugitieve emissie,De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen).,coe:emissie,vlcs:emissie,,,vlcs:emissie
 skos:Concept,ce:geleide_emissie,geleide_emissie,,Geleide emissie,"Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald. ",coe:emissie,vlcs:emissie,,,vlcs:emissie
 skos:Concept,ce:lekverliezen,lekverliezen,,Lekverliezen,TO DO,coe:emissie,vlcs:emissie,,,vlcs:emissie
-skos:ConceptScheme,vlcs:emissie,emissie,,Codelijst types emissie.,Een type van een emissie,,,,,
+skos:ConceptScheme,vlcs:emissie,emissie,,Codelijst emissietype.,Een type van een emissie,,,,,
 skos:Collection,coe:emissie,co_emissie,,Collectie types emissie lucht.,Een type van een emissie,,vlcs:emissie,,,
 skos:Collection,coe:lozingswijze_imjv,co_lozingswijze_imjv,,Collectie lozingswijzen imjv.,Lozingswijze zoals gedefinieerd in het Integraal Milieujaarverslag,,vlcs:emissie,,,
 skos:Concept,cli:lozend,Lozend,,Lozend,Het water wordt geloosd in oppervlaktewater (rechtstreeks of via riolering die nog niet is aangesloten op een RWZI,coe:lozingswijze_imjv,vlcs:emissie,,,vlcs:emissie
