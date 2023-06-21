@@ -1,10 +1,30 @@
 type,uri,dc.id,notation,prefLabel,definition,collection,inScheme,theme,seeAlso,topConceptOf
-skos:Concept,ce:abnormale_emissie,abnormale_emissie,,Abnormale emissie,,,,,,vlcs:emissie
-skos:Concept,ce:andere_niet_geleide_emissie,andere_niet_geleide_emissie,,Andere niet-geleide emissie,,,,,,vlcs:emissie
-skos:Concept,ce:diffuse_emissie,diffuse_emissie,,Diffuse emissie,"Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen.",,vlcs:emissie,,,vlcs:emissie
-skos:Concept,ce:doorzet_emissie,doorzet_emissie,,Doorzet emissie,TO DO,,vlcs:emissie,,,vlcs:emissie
-skos:Concept,ce:fakkel_emissie,fakkel_emissie,,Fakkel emissie,TO DO,,vlcs:emissie,,,vlcs:emissie
-skos:Concept,ce:fugitieve_emissie,fugitieve_emissie,,Fugitieve emissie,De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen).,,,,,vlcs:emissie
-skos:Concept,ce:geleide_emissie,geleide_emissie,,Geleide emissie,"Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald. ",,vlcs:emissie,,,vlcs:emissie
-skos:Concept,ce:lekverliezen,lekverliezen,,Lekverliezen,TO DO,,vlcs:emissie,,,vlcs:emissie
+skos:Concept,ce:abnormale_emissie,abnormale_emissie,,Abnormale emissie,,coe:emissie,vlcs:emissie,,,vlcs:emissie
+skos:Concept,ce:andere_niet_geleide_emissie,andere_niet_geleide_emissie,,Andere niet-geleide emissie,,coe:emissie,vlcs:emissie,,,vlcs:emissie
+skos:Concept,ce:diffuse_emissie,diffuse_emissie,,Diffuse emissie,"Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen.",coe:emissie,vlcs:emissie,,,vlcs:emissie
+skos:Concept,ce:doorzet_emissie,doorzet_emissie,,Doorzet emissie,TO DO,coe:emissie,vlcs:emissie,,,vlcs:emissie
+skos:Concept,ce:fakkel_emissie,fakkel_emissie,,Fakkel emissie,TO DO,coe:emissie,vlcs:emissie,,,vlcs:emissie
+skos:Concept,ce:fugitieve_emissie,fugitieve_emissie,,Fugitieve emissie,De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen).,coe:emissie,vlcs:emissie,,,vlcs:emissie
+skos:Concept,ce:geleide_emissie,geleide_emissie,,Geleide emissie,"Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald. ",coe:emissie,vlcs:emissie,,,vlcs:emissie
+skos:Concept,ce:lekverliezen,lekverliezen,,Lekverliezen,TO DO,coe:emissie,vlcs:emissie,,,vlcs:emissie
 skos:ConceptScheme,vlcs:emissie,emissie,,Codelijst types emissie.,Een type van een emissie,,,,,
+skos:Collection,coe:emissie,co_emissie,,Collectie types emissie lucht.,Een type van een emissie,,vlcs:emissie,,,
+skos:Collection,coe:lozingswijze_imjv,co_lozingswijze_imjv,,Collectie lozingswijzen imjv.,Lozingswijze zoals gedefinieerd in het Integraal Milieujaarverslag,,vlcs:emissie,,,
+skos:Concept,cli:lozend,Lozend,,Lozend,Het water wordt geloosd in oppervlaktewater (rechtstreeks of via riolering die nog niet is aangesloten op een RWZI,coe:lozingswijze_imjv,vlcs:emissie,,,vlcs:emissie
+skos:Concept,cli:oppompend,Oppompend,,Oppompend,Dit betreft oppervlaktewater dat wordt opgepompt,coe:lozingswijze_imjv,vlcs:emissie,,,vlcs:emissie
+skos:Concept,cli:transfer,Transfer,,Transfer,Het water wordt na het verlaten van het bedrijfsterrein nog gezuiverd in een openbare of industriële waterzuiveringsinstallatie,coe:lozingswijze_imjv,vlcs:emissie,,,vlcs:emissie
+skos:Collection,coe:lozingswijze,co_lozingswijze,,Collectie lozingswijzen,Wijze waarop het water geloosd wordt.,,vlcs:emissie,,,
+skos:Concept,cl:grondwater,Grondwater,,Grondwater,Lozing in grondwater,coe:lozingswijze,vlcs:emissie,,,vlcs:emissie
+skos:Concept,cl:irwzi,IRWZI,,IRWZI,Influent RWZI,coe:lozingswijze,vlcs:emissie,,,vlcs:emissie
+skos:Concept,cl:iwzi,IWZI,,IWZI,Lozing naar industriële waterzuiveringsinstallatie,coe:lozingswijze,vlcs:emissie,,,vlcs:emissie
+skos:Concept,cl:intern,Intern,,Intern,Lozing in een exploitatie,coe:lozingswijze,vlcs:emissie,,,vlcs:emissie
+skos:Concept,cl:oopw,OOpw,,OOpw,Opgenomen oppervlaktewater,coe:lozingswijze,vlcs:emissie,,,vlcs:emissie
+skos:Concept,cl:ow_dir,OW_DIR,,OW DIR,Lozing direct in oppervlaktewater,coe:lozingswijze,vlcs:emissie,,,vlcs:emissie
+skos:Concept,cl:ow_indir,OW_INDIR,,OW INDIR,Lozing op riolering die ongezuiverd loost in het oppervlaktewater,coe:lozingswijze,vlcs:emissie,,,vlcs:emissie
+skos:Concept,cl:rwa,RWA,,RWA,Lozing in de een regenweerafvoer,coe:lozingswijze,vlcs:emissie,,,vlcs:emissie
+skos:Concept,cl:rwzi,RWZI,,RWZI,Lozing op riolering die gezuiverd wordt in een publieke waterzuivering,coe:lozingswijze,vlcs:emissie,,,vlcs:emissie
+skos:Concept,cl:septischmateriaal,SeptischMateriaal,,Septisch Materiaal,Aanvoer van septisch materiaal naar een RWZI,coe:lozingswijze,vlcs:emissie,,,vlcs:emissie
+skos:Concept,cl:geleidelozing,geleidelozing,,Geleide lozing,som van alle vrachten van lozingspunten van het type ‘Lozend’ en ‘Transfer’,coe:lozingswijze,vlcs:emissie,,,vlcs:emissie
+skos:Concept,cl:abnormalelozing,abnormalelozing,,Abnormale lozing,Lozing die gebeurt tijdens abnormale omstandigheden,coe:lozingswijze,vlcs:emissie,,,vlcs:emissie
+skos:Concept,cl:brutolozing,brutolozing,,Bruto lozing,som van de geleide lozingen en de abnormale lozingen,coe:lozingswijze,vlcs:emissie,,,vlcs:emissie
+skos:Concept,cl:nettolozing,nettolozing,,Netto lozing,Bruto lozing min de som van alle vrachten van lozingspunten van het type ‘Oppompend’,coe:lozingswijze,vlcs:emissie,,,vlcs:emissie

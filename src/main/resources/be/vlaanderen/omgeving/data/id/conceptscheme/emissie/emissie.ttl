@@ -1,4 +1,6 @@
 @prefix ce:    <https://data.omgeving.vlaanderen.be/id/concept/emissie/> .
+@prefix cl:    <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/> .
+@prefix cli:   <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/> .
 @prefix coe:   <https://data.omgeving.vlaanderen.be/id/collection/emissie/> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
@@ -9,37 +11,33 @@
 @prefix vlcs:  <https://data.omgeving.vlaanderen.be/id/conceptscheme/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-ce:doorzet_emissie  a      skos:Concept ;
-        dc:identifier      "doorzet_emissie" ;
-        skos:definition    "TO DO"@nl ;
+coe:lozingswijze_imjv
+        a                skos:Collection ;
+        dc:identifier    "co_lozingswijze_imjv" ;
+        skos:definition  "Lozingswijze zoals gedefinieerd in het Integraal Milieujaarverslag"@nl ;
+        skos:inScheme    vlcs:emissie ;
+        skos:member      cli:transfer , cli:oppompend , cli:lozend ;
+        skos:prefLabel   "Collectie lozingswijzen imjv."@nl .
+
+cl:irwzi  a                skos:Concept ;
+        dc:identifier      "IRWZI" ;
+        skos:definition    "Influent RWZI"@nl ;
         skos:inScheme      vlcs:emissie ;
-        skos:prefLabel     "Doorzet emissie"@nl ;
+        skos:prefLabel     "IRWZI"@nl ;
         skos:topConceptOf  vlcs:emissie .
 
-ce:diffuse_emissie  a      skos:Concept ;
-        dc:identifier      "diffuse_emissie" ;
-        skos:definition    "Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen."@nl ;
+ce:andere_niet_geleide_emissie
+        a                  skos:Concept ;
+        dc:identifier      "andere_niet_geleide_emissie" ;
         skos:inScheme      vlcs:emissie ;
-        skos:prefLabel     "Diffuse emissie"@nl ;
+        skos:prefLabel     "Andere niet-geleide emissie"@nl ;
         skos:topConceptOf  vlcs:emissie .
 
-ce:fugitieve_emissie  a    skos:Concept ;
-        dc:identifier      "fugitieve_emissie" ;
-        skos:definition    "De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."@nl ;
-        skos:prefLabel     "Fugitieve emissie"@nl ;
-        skos:topConceptOf  vlcs:emissie .
-
-vlcs:emissie  a             skos:ConceptScheme ;
-        dc:identifier       "emissie" ;
-        skos:definition     "Een type van een emissie"@nl ;
-        skos:hasTopConcept  ce:geleide_emissie , ce:doorzet_emissie , ce:abnormale_emissie , ce:lekverliezen , ce:fugitieve_emissie , ce:fakkel_emissie , ce:andere_niet_geleide_emissie , ce:diffuse_emissie ;
-        skos:prefLabel      "Codelijst types emissie."@nl .
-
-ce:fakkel_emissie  a       skos:Concept ;
-        dc:identifier      "fakkel_emissie" ;
-        skos:definition    "TO DO"@nl ;
+cl:nettolozing  a          skos:Concept ;
+        dc:identifier      "nettolozing" ;
+        skos:definition    "Bruto lozing min de som van alle vrachten van lozingspunten van het type ‘Oppompend’"@nl ;
         skos:inScheme      vlcs:emissie ;
-        skos:prefLabel     "Fakkel emissie"@nl ;
+        skos:prefLabel     "Netto lozing"@nl ;
         skos:topConceptOf  vlcs:emissie .
 
 ce:lekverliezen  a         skos:Concept ;
@@ -49,9 +47,18 @@ ce:lekverliezen  a         skos:Concept ;
         skos:prefLabel     "Lekverliezen"@nl ;
         skos:topConceptOf  vlcs:emissie .
 
-ce:abnormale_emissie  a    skos:Concept ;
-        dc:identifier      "abnormale_emissie" ;
-        skos:prefLabel     "Abnormale emissie"@nl ;
+coe:lozingswijze  a      skos:Collection ;
+        dc:identifier    "co_lozingswijze" ;
+        skos:definition  "Wijze waarop het water geloosd wordt."@nl ;
+        skos:inScheme    vlcs:emissie ;
+        skos:member      cl:geleidelozing , cl:ow_indir , cl:intern , cl:grondwater , cl:rwzi , cl:septischmateriaal , cl:ow_dir , cl:oopw , cl:iwzi , cl:abnormalelozing , cl:irwzi , cl:nettolozing , cl:rwa , cl:brutolozing ;
+        skos:prefLabel   "Collectie lozingswijzen"@nl .
+
+ce:diffuse_emissie  a      skos:Concept ;
+        dc:identifier      "diffuse_emissie" ;
+        skos:definition    "Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen."@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Diffuse emissie"@nl ;
         skos:topConceptOf  vlcs:emissie .
 
 ce:geleide_emissie  a      skos:Concept ;
@@ -61,8 +68,147 @@ ce:geleide_emissie  a      skos:Concept ;
         skos:prefLabel     "Geleide emissie"@nl ;
         skos:topConceptOf  vlcs:emissie .
 
-ce:andere_niet_geleide_emissie
-        a                  skos:Concept ;
-        dc:identifier      "andere_niet_geleide_emissie" ;
-        skos:prefLabel     "Andere niet-geleide emissie"@nl ;
+cl:ow_indir  a             skos:Concept ;
+        dc:identifier      "OW_INDIR" ;
+        skos:definition    "Lozing op riolering die ongezuiverd loost in het oppervlaktewater"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "OW INDIR"@nl ;
         skos:topConceptOf  vlcs:emissie .
+
+cl:brutolozing  a          skos:Concept ;
+        dc:identifier      "brutolozing" ;
+        skos:definition    "som van de geleide lozingen en de abnormale lozingen"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Bruto lozing"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+ce:fugitieve_emissie  a    skos:Concept ;
+        dc:identifier      "fugitieve_emissie" ;
+        skos:definition    "De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Fugitieve emissie"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+cli:oppompend  a           skos:Concept ;
+        dc:identifier      "Oppompend" ;
+        skos:definition    "Dit betreft oppervlaktewater dat wordt opgepompt"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Oppompend"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+cl:geleidelozing  a        skos:Concept ;
+        dc:identifier      "geleidelozing" ;
+        skos:definition    "som van alle vrachten van lozingspunten van het type ‘Lozend’ en ‘Transfer’"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Geleide lozing"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+ce:abnormale_emissie  a    skos:Concept ;
+        dc:identifier      "abnormale_emissie" ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Abnormale emissie"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+cl:ow_dir  a               skos:Concept ;
+        dc:identifier      "OW_DIR" ;
+        skos:definition    "Lozing direct in oppervlaktewater"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "OW DIR"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+cli:transfer  a            skos:Concept ;
+        dc:identifier      "Transfer" ;
+        skos:definition    "Het water wordt na het verlaten van het bedrijfsterrein nog gezuiverd in een openbare of industriële waterzuiveringsinstallatie"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Transfer"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+cli:lozend  a              skos:Concept ;
+        dc:identifier      "Lozend" ;
+        skos:definition    "Het water wordt geloosd in oppervlaktewater (rechtstreeks of via riolering die nog niet is aangesloten op een RWZI"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Lozend"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+cl:grondwater  a           skos:Concept ;
+        dc:identifier      "Grondwater" ;
+        skos:definition    "Lozing in grondwater"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Grondwater"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+cl:intern  a               skos:Concept ;
+        dc:identifier      "Intern" ;
+        skos:definition    "Lozing in een exploitatie"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Intern"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+cl:oopw  a                 skos:Concept ;
+        dc:identifier      "OOpw" ;
+        skos:definition    "Opgenomen oppervlaktewater"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "OOpw"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+coe:emissie  a           skos:Collection ;
+        dc:identifier    "co_emissie" ;
+        skos:definition  "Een type van een emissie"@nl ;
+        skos:inScheme    vlcs:emissie ;
+        skos:member      ce:abnormale_emissie , ce:diffuse_emissie , ce:lekverliezen , ce:fugitieve_emissie , ce:geleide_emissie , ce:doorzet_emissie , ce:andere_niet_geleide_emissie , ce:fakkel_emissie ;
+        skos:prefLabel   "Collectie types emissie lucht."@nl .
+
+ce:doorzet_emissie  a      skos:Concept ;
+        dc:identifier      "doorzet_emissie" ;
+        skos:definition    "TO DO"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Doorzet emissie"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+cl:iwzi  a                 skos:Concept ;
+        dc:identifier      "IWZI" ;
+        skos:definition    "Lozing naar industriële waterzuiveringsinstallatie"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "IWZI"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+ce:fakkel_emissie  a       skos:Concept ;
+        dc:identifier      "fakkel_emissie" ;
+        skos:definition    "TO DO"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Fakkel emissie"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+cl:septischmateriaal  a    skos:Concept ;
+        dc:identifier      "SeptischMateriaal" ;
+        skos:definition    "Aanvoer van septisch materiaal naar een RWZI"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Septisch Materiaal"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+cl:rwzi  a                 skos:Concept ;
+        dc:identifier      "RWZI" ;
+        skos:definition    "Lozing op riolering die gezuiverd wordt in een publieke waterzuivering"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "RWZI"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+cl:rwa  a                  skos:Concept ;
+        dc:identifier      "RWA" ;
+        skos:definition    "Lozing in de een regenweerafvoer"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "RWA"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+cl:abnormalelozing  a      skos:Concept ;
+        dc:identifier      "abnormalelozing" ;
+        skos:definition    "Lozing die gebeurt tijdens abnormale omstandigheden"@nl ;
+        skos:inScheme      vlcs:emissie ;
+        skos:prefLabel     "Abnormale lozing"@nl ;
+        skos:topConceptOf  vlcs:emissie .
+
+vlcs:emissie  a             skos:ConceptScheme ;
+        dc:identifier       "emissie" ;
+        skos:definition     "Een type van een emissie"@nl ;
+        skos:hasTopConcept  cli:oppompend , cl:grondwater , ce:geleide_emissie , cl:rwzi , cl:rwa , cl:intern , cl:oopw , ce:doorzet_emissie , ce:abnormale_emissie , cl:ow_indir , ce:lekverliezen , cl:irwzi , cl:brutolozing , cli:transfer , ce:fugitieve_emissie , cl:ow_dir , cl:abnormalelozing , cl:septischmateriaal , ce:fakkel_emissie , ce:andere_niet_geleide_emissie , cl:iwzi , ce:diffuse_emissie , cl:geleidelozing , cl:nettolozing , cli:lozend ;
+        skos:prefLabel      "Codelijst types emissie."@nl .

@@ -49,6 +49,8 @@
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
     "vlcs" : "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
     "ce" : "https://data.omgeving.vlaanderen.be/id/concept/emissie/",
+    "cl" : "https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/",
+    "cli" : "https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/",
     "coe" : "https://data.omgeving.vlaanderen.be/id/collection/emissie/",
     "dcat" : "http://www.w3.org/ns/dcat#",
     "dct" : "http://purl.org/dc/terms/",
