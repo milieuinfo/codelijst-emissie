@@ -82,173 +82,198 @@ emissie:abnormale_emissie a skos:Concept;
     skos:inScheme conceptscheme:emissie;
     skos:notation "abnormale_emissie";
     skos:prefLabel "Abnormale emissie"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 emissie:andere_niet_geleide_emissie a skos:Concept;
     skos:inScheme conceptscheme:emissie;
     skos:notation "andere_niet_geleide_emissie";
     skos:prefLabel "Andere niet-geleide emissie"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 emissie:diffuse_emissie a skos:Concept;
     skos:definition "Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen."@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "diffuse_emissie";
     skos:note "Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen."@nl;
     skos:prefLabel "Diffuse emissie"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 emissie:doorzet_emissie a skos:Concept;
     skos:definition "TO DO"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "doorzet_emissie";
     skos:note "TO DO"@nl;
     skos:prefLabel "Doorzet emissie"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 emissie:fakkel_emissie a skos:Concept;
     skos:definition "TO DO"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "fakkel_emissie";
     skos:note "TO DO"@nl;
     skos:prefLabel "Fakkel emissie"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 emissie:fugitieve_emissie a skos:Concept;
     skos:definition "De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "fugitieve_emissie";
     skos:note "De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."@nl;
     skos:prefLabel "Fugitieve emissie"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 emissie:geleide_emissie a skos:Concept;
     skos:definition "Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald."@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "geleide_emissie";
     skos:note "Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald."@nl;
     skos:prefLabel "Geleide emissie"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 emissie:lekverliezen a skos:Concept;
     skos:definition "TO DO"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "lekverliezen";
     skos:note "TO DO"@nl;
     skos:prefLabel "Lekverliezen"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze:abnormalelozing a skos:Concept;
     skos:definition "Lozing die gebeurt tijdens abnormale omstandigheden"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "abnormalelozing";
     skos:note "Lozing die gebeurt tijdens abnormale omstandigheden"@nl;
     skos:prefLabel "Abnormale lozing"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze:brutolozing a skos:Concept;
     skos:definition "som van de geleide lozingen en de abnormale lozingen"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "brutolozing";
     skos:note "som van de geleide lozingen en de abnormale lozingen"@nl;
     skos:prefLabel "Bruto lozing"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze:geleidelozing a skos:Concept;
     skos:definition "som van alle vrachten van lozingspunten van het type ‘Lozend’ en ‘Transfer’"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "geleidelozing";
     skos:note "som van alle vrachten van lozingspunten van het type ‘Lozend’ en ‘Transfer’"@nl;
     skos:prefLabel "Geleide lozing"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze:grondwater a skos:Concept;
     skos:definition "Lozing in grondwater"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "Grondwater";
     skos:note "Lozing in grondwater"@nl;
     skos:prefLabel "Grondwater"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze:intern a skos:Concept;
     skos:definition "Lozing in een exploitatie"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "Intern";
     skos:note "Lozing in een exploitatie"@nl;
     skos:prefLabel "Intern"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze:irwzi a skos:Concept;
     skos:definition "Influent RWZI"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "IRWZI";
     skos:note "Influent RWZI"@nl;
     skos:prefLabel "IRWZI"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze:iwzi a skos:Concept;
     skos:definition "Lozing naar industriële waterzuiveringsinstallatie"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "IWZI";
     skos:note "Lozing naar industriële waterzuiveringsinstallatie"@nl;
     skos:prefLabel "IWZI"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze:nettolozing a skos:Concept;
     skos:definition "Bruto lozing min de som van alle vrachten van lozingspunten van het type ‘Oppompend’"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "nettolozing";
     skos:note "Bruto lozing min de som van alle vrachten van lozingspunten van het type ‘Oppompend’"@nl;
     skos:prefLabel "Netto lozing"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze:oopw a skos:Concept;
     skos:definition "Opgenomen oppervlaktewater"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "OOpw";
     skos:note "Opgenomen oppervlaktewater"@nl;
     skos:prefLabel "OOpw"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze:ow_dir a skos:Concept;
     skos:definition "Lozing direct in oppervlaktewater"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "OW_DIR";
     skos:note "Lozing direct in oppervlaktewater"@nl;
     skos:prefLabel "OW DIR"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze:ow_indir a skos:Concept;
     skos:definition "Lozing op riolering die ongezuiverd loost in het oppervlaktewater"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "OW_INDIR";
     skos:note "Lozing op riolering die ongezuiverd loost in het oppervlaktewater"@nl;
     skos:prefLabel "OW INDIR"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze:rwa a skos:Concept;
     skos:definition "Lozing in de een regenweerafvoer"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "RWA";
     skos:note "Lozing in de een regenweerafvoer"@nl;
     skos:prefLabel "RWA"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze:rwzi a skos:Concept;
     skos:definition "Lozing op riolering die gezuiverd wordt in een publieke waterzuivering"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "RWZI";
     skos:note "Lozing op riolering die gezuiverd wordt in een publieke waterzuivering"@nl;
     skos:prefLabel "RWZI"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze:septischmateriaal a skos:Concept;
     skos:definition "Aanvoer van septisch materiaal naar een RWZI"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "SeptischMateriaal";
     skos:note "Aanvoer van septisch materiaal naar een RWZI"@nl;
     skos:prefLabel "Septisch Materiaal"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze_imjv:lozend a skos:Concept;
     skos:definition "Het water wordt geloosd in oppervlaktewater (rechtstreeks of via riolering die nog niet is aangesloten op een RWZI"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "Lozend";
     skos:note "Het water wordt geloosd in oppervlaktewater (rechtstreeks of via riolering die nog niet is aangesloten op een RWZI"@nl;
     skos:prefLabel "Lozend"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze_imjv:oppompend a skos:Concept;
     skos:definition "Dit betreft oppervlaktewater dat wordt opgepompt"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "Oppompend";
     skos:note "Dit betreft oppervlaktewater dat wordt opgepompt"@nl;
     skos:prefLabel "Oppompend"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 lozingswijze_imjv:transfer a skos:Concept;
     skos:definition "Het water wordt na het verlaten van het bedrijfsterrein nog gezuiverd in een openbare of industriële waterzuiveringsinstallatie"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:notation "Transfer";
     skos:note "Het water wordt na het verlaten van het bedrijfsterrein nog gezuiverd in een openbare of industriële waterzuiveringsinstallatie"@nl;
     skos:prefLabel "Transfer"@nl;
-    skos:topConceptOf conceptscheme:emissie.
+    skos:topConceptOf conceptscheme:emissie;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/2895>.
 conceptscheme:emissie xkos:belongsTo omg_dataset:codelijst-emissie;
     a skos:ConceptScheme;
     skos:definition "Een type van een emissie"@nl;

@@ -46,11 +46,13 @@
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/abnormale_emissie> <http://www.w3.org/2004/02/skos/core#notation> "abnormale_emissie" .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/abnormale_emissie> <http://www.w3.org/2004/02/skos/core#prefLabel> "Abnormale emissie"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/abnormale_emissie> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/emissie/abnormale_emissie> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/andere_niet_geleide_emissie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/andere_niet_geleide_emissie> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/andere_niet_geleide_emissie> <http://www.w3.org/2004/02/skos/core#notation> "andere_niet_geleide_emissie" .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/andere_niet_geleide_emissie> <http://www.w3.org/2004/02/skos/core#prefLabel> "Andere niet-geleide emissie"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/andere_niet_geleide_emissie> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/emissie/andere_niet_geleide_emissie> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/diffuse_emissie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/diffuse_emissie> <http://www.w3.org/2004/02/skos/core#definition> "Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen."@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/diffuse_emissie> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -58,6 +60,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/diffuse_emissie> <http://www.w3.org/2004/02/skos/core#note> "Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen."@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/diffuse_emissie> <http://www.w3.org/2004/02/skos/core#prefLabel> "Diffuse emissie"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/diffuse_emissie> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/emissie/diffuse_emissie> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/doorzet_emissie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/doorzet_emissie> <http://www.w3.org/2004/02/skos/core#definition> "TO DO"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/doorzet_emissie> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -65,6 +68,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/doorzet_emissie> <http://www.w3.org/2004/02/skos/core#note> "TO DO"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/doorzet_emissie> <http://www.w3.org/2004/02/skos/core#prefLabel> "Doorzet emissie"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/doorzet_emissie> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/emissie/doorzet_emissie> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/fakkel_emissie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/fakkel_emissie> <http://www.w3.org/2004/02/skos/core#definition> "TO DO"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/fakkel_emissie> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -72,6 +76,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/fakkel_emissie> <http://www.w3.org/2004/02/skos/core#note> "TO DO"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/fakkel_emissie> <http://www.w3.org/2004/02/skos/core#prefLabel> "Fakkel emissie"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/fakkel_emissie> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/emissie/fakkel_emissie> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/fugitieve_emissie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/fugitieve_emissie> <http://www.w3.org/2004/02/skos/core#definition> "De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/fugitieve_emissie> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -79,6 +84,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/fugitieve_emissie> <http://www.w3.org/2004/02/skos/core#note> "De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/fugitieve_emissie> <http://www.w3.org/2004/02/skos/core#prefLabel> "Fugitieve emissie"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/fugitieve_emissie> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/emissie/fugitieve_emissie> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/geleide_emissie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/geleide_emissie> <http://www.w3.org/2004/02/skos/core#definition> "Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald."@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/geleide_emissie> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -86,6 +92,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/geleide_emissie> <http://www.w3.org/2004/02/skos/core#note> "Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald."@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/geleide_emissie> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geleide emissie"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/geleide_emissie> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/emissie/geleide_emissie> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/lekverliezen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/lekverliezen> <http://www.w3.org/2004/02/skos/core#definition> "TO DO"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/lekverliezen> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -93,6 +100,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/lekverliezen> <http://www.w3.org/2004/02/skos/core#note> "TO DO"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/lekverliezen> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lekverliezen"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/emissie/lekverliezen> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/emissie/lekverliezen> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/abnormalelozing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/abnormalelozing> <http://www.w3.org/2004/02/skos/core#definition> "Lozing die gebeurt tijdens abnormale omstandigheden"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/abnormalelozing> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -100,6 +108,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/abnormalelozing> <http://www.w3.org/2004/02/skos/core#note> "Lozing die gebeurt tijdens abnormale omstandigheden"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/abnormalelozing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Abnormale lozing"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/abnormalelozing> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/abnormalelozing> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/brutolozing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/brutolozing> <http://www.w3.org/2004/02/skos/core#definition> "som van de geleide lozingen en de abnormale lozingen"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/brutolozing> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -107,6 +116,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/brutolozing> <http://www.w3.org/2004/02/skos/core#note> "som van de geleide lozingen en de abnormale lozingen"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/brutolozing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Bruto lozing"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/brutolozing> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/brutolozing> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/geleidelozing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/geleidelozing> <http://www.w3.org/2004/02/skos/core#definition> "som van alle vrachten van lozingspunten van het type ‘Lozend’ en ‘Transfer’"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/geleidelozing> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -114,6 +124,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/geleidelozing> <http://www.w3.org/2004/02/skos/core#note> "som van alle vrachten van lozingspunten van het type ‘Lozend’ en ‘Transfer’"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/geleidelozing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geleide lozing"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/geleidelozing> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/geleidelozing> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/grondwater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/grondwater> <http://www.w3.org/2004/02/skos/core#definition> "Lozing in grondwater"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/grondwater> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -121,6 +132,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/grondwater> <http://www.w3.org/2004/02/skos/core#note> "Lozing in grondwater"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/grondwater> <http://www.w3.org/2004/02/skos/core#prefLabel> "Grondwater"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/grondwater> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/grondwater> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/intern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/intern> <http://www.w3.org/2004/02/skos/core#definition> "Lozing in een exploitatie"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/intern> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -128,6 +140,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/intern> <http://www.w3.org/2004/02/skos/core#note> "Lozing in een exploitatie"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/intern> <http://www.w3.org/2004/02/skos/core#prefLabel> "Intern"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/intern> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/intern> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/irwzi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/irwzi> <http://www.w3.org/2004/02/skos/core#definition> "Influent RWZI"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/irwzi> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -135,6 +148,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/irwzi> <http://www.w3.org/2004/02/skos/core#note> "Influent RWZI"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/irwzi> <http://www.w3.org/2004/02/skos/core#prefLabel> "IRWZI"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/irwzi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/irwzi> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/iwzi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/iwzi> <http://www.w3.org/2004/02/skos/core#definition> "Lozing naar industriële waterzuiveringsinstallatie"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/iwzi> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -142,6 +156,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/iwzi> <http://www.w3.org/2004/02/skos/core#note> "Lozing naar industriële waterzuiveringsinstallatie"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/iwzi> <http://www.w3.org/2004/02/skos/core#prefLabel> "IWZI"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/iwzi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/iwzi> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/nettolozing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/nettolozing> <http://www.w3.org/2004/02/skos/core#definition> "Bruto lozing min de som van alle vrachten van lozingspunten van het type ‘Oppompend’"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/nettolozing> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -149,6 +164,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/nettolozing> <http://www.w3.org/2004/02/skos/core#note> "Bruto lozing min de som van alle vrachten van lozingspunten van het type ‘Oppompend’"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/nettolozing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Netto lozing"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/nettolozing> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/nettolozing> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/oopw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/oopw> <http://www.w3.org/2004/02/skos/core#definition> "Opgenomen oppervlaktewater"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/oopw> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -156,6 +172,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/oopw> <http://www.w3.org/2004/02/skos/core#note> "Opgenomen oppervlaktewater"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/oopw> <http://www.w3.org/2004/02/skos/core#prefLabel> "OOpw"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/oopw> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/oopw> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/ow_dir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/ow_dir> <http://www.w3.org/2004/02/skos/core#definition> "Lozing direct in oppervlaktewater"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/ow_dir> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -163,6 +180,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/ow_dir> <http://www.w3.org/2004/02/skos/core#note> "Lozing direct in oppervlaktewater"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/ow_dir> <http://www.w3.org/2004/02/skos/core#prefLabel> "OW DIR"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/ow_dir> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/ow_dir> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/ow_indir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/ow_indir> <http://www.w3.org/2004/02/skos/core#definition> "Lozing op riolering die ongezuiverd loost in het oppervlaktewater"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/ow_indir> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -170,6 +188,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/ow_indir> <http://www.w3.org/2004/02/skos/core#note> "Lozing op riolering die ongezuiverd loost in het oppervlaktewater"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/ow_indir> <http://www.w3.org/2004/02/skos/core#prefLabel> "OW INDIR"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/ow_indir> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/ow_indir> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/rwa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/rwa> <http://www.w3.org/2004/02/skos/core#definition> "Lozing in de een regenweerafvoer"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/rwa> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -177,6 +196,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/rwa> <http://www.w3.org/2004/02/skos/core#note> "Lozing in de een regenweerafvoer"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/rwa> <http://www.w3.org/2004/02/skos/core#prefLabel> "RWA"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/rwa> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/rwa> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/rwzi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/rwzi> <http://www.w3.org/2004/02/skos/core#definition> "Lozing op riolering die gezuiverd wordt in een publieke waterzuivering"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/rwzi> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -184,6 +204,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/rwzi> <http://www.w3.org/2004/02/skos/core#note> "Lozing op riolering die gezuiverd wordt in een publieke waterzuivering"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/rwzi> <http://www.w3.org/2004/02/skos/core#prefLabel> "RWZI"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/rwzi> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/rwzi> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/septischmateriaal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/septischmateriaal> <http://www.w3.org/2004/02/skos/core#definition> "Aanvoer van septisch materiaal naar een RWZI"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/septischmateriaal> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -191,6 +212,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/septischmateriaal> <http://www.w3.org/2004/02/skos/core#note> "Aanvoer van septisch materiaal naar een RWZI"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/septischmateriaal> <http://www.w3.org/2004/02/skos/core#prefLabel> "Septisch Materiaal"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/septischmateriaal> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/septischmateriaal> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/lozend> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/lozend> <http://www.w3.org/2004/02/skos/core#definition> "Het water wordt geloosd in oppervlaktewater (rechtstreeks of via riolering die nog niet is aangesloten op een RWZI"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/lozend> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -198,6 +220,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/lozend> <http://www.w3.org/2004/02/skos/core#note> "Het water wordt geloosd in oppervlaktewater (rechtstreeks of via riolering die nog niet is aangesloten op een RWZI"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/lozend> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lozend"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/lozend> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/lozend> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/oppompend> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/oppompend> <http://www.w3.org/2004/02/skos/core#definition> "Dit betreft oppervlaktewater dat wordt opgepompt"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/oppompend> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -205,6 +228,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/oppompend> <http://www.w3.org/2004/02/skos/core#note> "Dit betreft oppervlaktewater dat wordt opgepompt"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/oppompend> <http://www.w3.org/2004/02/skos/core#prefLabel> "Oppompend"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/oppompend> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/oppompend> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/transfer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/transfer> <http://www.w3.org/2004/02/skos/core#definition> "Het water wordt na het verlaten van het bedrijfsterrein nog gezuiverd in een openbare of industriële waterzuiveringsinstallatie"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/transfer> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
@@ -212,6 +236,7 @@
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/transfer> <http://www.w3.org/2004/02/skos/core#note> "Het water wordt na het verlaten van het bedrijfsterrein nog gezuiverd in een openbare of industriële waterzuiveringsinstallatie"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/transfer> <http://www.w3.org/2004/02/skos/core#prefLabel> "Transfer"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/transfer> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> .
+<https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/transfer> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/concept/2895> .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <https://data.omgeving.vlaanderen.be/id/dataset/codelijst-emissie> .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/emissie> <http://www.w3.org/2004/02/skos/core#definition> "Een type van een emissie"@nl .
