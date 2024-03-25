@@ -1,7 +1,3 @@
-#  sparql --results=TTL --data=../resources/be/vlaanderen/omgeving/data/id/conceptscheme/emissie/emissie.ttl  --query ../sparql/model.rq  > /tmp/test.ttl
-#  rdf2dot  /tmp/test.ttl | dot -Tpng > /tmp/test.png
-
-
 prefix skos:  <http://www.w3.org/2004/02/skos/core#>
 prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 prefix dbo:   <http://dbpedia.org/ontology/>
