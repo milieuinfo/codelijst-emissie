@@ -1,0 +1,468 @@
+@prefix vv:            <https://data.vlaanderen.be/ns/> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix xhv:           <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:          <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix omg_dataset:   <https://data.omgeving.vlaanderen.be/id/dataset/> .
+@prefix dct:           <http://purl.org/dc/terms/> .
+@prefix sh:            <http://www.w3.org/ns/shacl#> .
+@prefix omg_ont:       <https://data.omgeving.vlaanderen.be/id/ontology/> .
+@prefix omg_ag_cl:     <https://data.omgeving.vlaanderen.be/id/person/codelijst/> .
+@prefix omg_voc:       <https://data.omgeving.vlaanderen.be/ns/> .
+@prefix vl_org:        <http://data.vlaanderen.be/id/organisatie/> .
+@prefix xkos:          <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix dbo:           <http://dbpedia.org/ontology/> .
+@prefix vcs:            <https://data.vlaanderen.be/ns/emissie#> .
+@prefix dbp:           <http://dbpedia.org/property/> .
+@prefix omg_ps:        <https://data.omgeving.vlaanderen.be/id/propertyshape/> .
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ons:           <https://data.omgeving.vlaanderen.be/id/nodeshape/> .
+@prefix schema:        <http://schema.org/> .
+@prefix foaf:          <http://xmlns.com/foaf/0.1/> .
+@prefix dcat:     <http://www.w3.org/ns/dcat#> .
+
+omg_ont:emissie-ap-constraints
+    a               owl:Ontology ;
+    rdfs:comment
+                    "Specifieert hoe de data in de codelijst van fysico-chemische eigenschap te encoderen in RDF (i.e. RDF termen, kardinaliteiten,...)."@en ;
+    rdfs:label      "Sommatie van stoffen AP Constraints Limited"@en ;
+    dct:abstract    "Het fysico-chemische eigenschap applicatieprofiel specifieert de RDF termen (klassen en properties) en bijhorende constraints die gebruikt worden voor het beschrijven van fysico-chemische eigenschap. Het maakt hierbij zoveel mogelijk gebruik van bestaande termen (klassen en properties) uit bestaande , skos, dbo, dbp en een minimale set van nieuwe termen gedefinieerd in het Sommatie van stoffen Vocabularium."@en ;
+    dct:alternative "Sommatie van stoffen AP Shapes"@en ;
+    dct:creator     omg_ag_cl:creator ;
+    dct:description "Dit is de SHACL encodering van het applicatieprofiel van een fysico-chemische eigenschap dat de eerste stap van de transformatie vanuit csv controleert."@en ;
+    dct:issued      "2023-10-23"^^xsd:date ;
+    dct:title       "Sommatie van stoffen AP Constraints Limited"@en ;
+    xkos:belongsTo  omg_dataset:codelijst-emissie ;
+    xhv:last        omg_voc:emissie-ap-constraints ;
+    owl:sameAs      omg_voc:emissie-ap-constraints ;
+    owl:versionInfo "Versie 3.0.0  maart 2024"@en .
+
+
+omg_voc:emissie-ap-constraints
+    a          owl:Ontology ;
+    rdfs:label "Sommatie van stoffen AP Constraints"@en ;
+    owl:sameAs omg_ont:emissie-ap-constraints .
+
+omg_ag_cl:creator
+    rdfs:label "Ontwikkelaar codelijst"@en ;
+    schema:affiliation vl_org:OVO003751 ;
+    a foaf:Person;
+    foaf:firstName "Geert";
+    foaf:lastName "Van Haute";
+    foaf:mbox <mailto:geert.vanhaute@vlaanderen.be>.
+
+# Node Shapes
+ons:emissie_schema
+    a                sh:NodeShape ;
+    rdfs:label       "conceptschema van fysico-chemische eigenschap"@en ;
+    sh:name          "conceptschema van fysico-chemische eigenschap"@en ;
+    sh:description   "Het schema waarbinnen de fysico-chemische eigenschap gedefinieerd zijn"@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:property      omg_ps:col_cs_rdf_type, omg_ps:conceptscheme_prefLabel, omg_ps:emissie_schema_hasTopConcept,
+                     omg_ps:emissie_note, omg_ps:emissie_notation, omg_ps:emissie_definition , omg_ps:schema_belongsTo;
+    sh:closed true ;
+    sh:targetClass   skos:ConceptScheme .
+
+
+
+
+ons:emissie_collection
+    a                sh:NodeShape ;
+    rdfs:label       "verzameling"@en ;
+    sh:name          "verzameling"@en ;
+    sh:description   "Verzamelingen bundelen fysico-chemische eigenschap met gelijkaardige eigenschappen, analysemethoden of matrices waarin ze gemeten worden."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:property      omg_ps:col_cs_rdf_type, omg_ps:emissie_definition, omg_ps:emissie_note, omg_ps:emissie_prefLabel, omg_ps:emissie_collection_member,
+                     omg_ps:emissie_notation, omg_ps:emissie_inScheme ;
+    sh:closed true ;
+    sh:targetClass   skos:Collection .
+
+#ons:emissie_classificationlevel
+#    a                sh:NodeShape ;
+#    rdfs:label       "classificatieniveau"@en ;
+#    sh:name          "classificatieniveau"@en ;
+#    sh:description   "Classificatieniveau's bundelen CHEMONT categorieen van gelijk taxonomisch niveau (Kingdom, Superclass, Class, Subclass)."@en ;
+#    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+#    sh:property      omg_ps:emissie_prefLabel, omg_ps:emissie_classificationlevel_member,
+#                     omg_ps:emissie_inScheme ;
+#    sh:closed true ;
+#    sh:targetClass   xkos:ClassificationLevel .
+
+
+
+ons:emissie
+    a                sh:NodeShape ;
+    rdfs:label       "fysico-chemische eigenschap"@en ;
+    sh:name          "fysico-chemische eigenschap"@en ;
+    sh:description   ""@en ;
+    rdfs:comment     "De uniciteit van een fysico-chemische eigenschap wordt bepaald door haar uri en notatie."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:property      omg_ps:emissie_rdf_type, omg_ps:emissie_seeAlso,
+                     omg_ps:emissie_notation,  omg_ps:emissie_exactMatch, omg_ps:emissie_closeMatch, omg_ps:emissie_inScheme,
+                     omg_ps:emissie_comment, omg_ps:emissie_note, omg_ps:emissie_definition,
+                     omg_ps:emissie_altLabel,  omg_ps:emissie_prefLabel, omg_ps:emissie_narrowMatch,
+                     omg_ps:emissie_theme, omg_ps:emissie_topConceptOf, omg_ps:emissie_broader, omg_ps:emissie_casNumber,
+                     omg_ps:emissie_narrower, omg_ps:emissie_narrowerTransitive, omg_ps:emissie_mappingRelation, omg_ps:emissie_broadMatch, omg_ps:emissie_semanticRelation, omg_ps:emissie_broaderTransitive;
+    sh:closed true ;
+    sh:targetSubjectsOf dcat:theme .
+#sh:targetClass   skos:Concept .
+
+
+
+omg_ps:emissie_casNumber
+    a                sh:PropertyShape ;
+    rdfs:label       "CAS nummer"@en ;
+    sh:name          "CAS nummer"@en ;
+    sh:description   "Een CAS-nummer is een unieke numerieke identifier voor chemische elementen, componenten, polymeren, en legeringen. CAS staat voor Chemical Abstracts Service, een divisie van de American Chemical Society. Soms zijn er verschillende CAS-nummers (\"other CAS\") die exact hetzelfde betekenen. Dit heeft meestal te maken met oudere CAS-nummers die werden toegekend op het moment dat de stof nog niet helemaal gekarakteriseerd was. Later kan men er aldus op uit komen dat verschillende CAS-nummers op eenzelfde molecule betrekking hebben."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:datatype      xsd:string ;
+    sh:nodeKind      sh:Literal ;
+    sh:property      omg_ps:emissie_unique_casNumber ;
+    sh:path          dbo:casNumber .
+
+
+
+omg_ps:emissie_broadMatch
+    a                sh:PropertyShape ;
+    rdfs:label       "breder concept in een ander schema"@en ;
+    sh:name          "breder concept in een ander schema"@en ;
+    sh:description   "De relatie tussen een concept en een breder, minder specifiek concept binnen een ander schema."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          skos:broadMatch; .
+
+omg_ps:emissie_broaderTransitive
+    a                sh:PropertyShape ;
+    rdfs:label       "breder transitief concept"@en ;
+    sh:name          "breder transitief concept"@en ;
+    sh:description   "breder transitief concept."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          skos:broaderTransitive; .
+
+omg_ps:emissie_semanticRelation
+    a                sh:PropertyShape ;
+    rdfs:label       "gerelateerd concept"@en ;
+    sh:name          "gerelateerd concept"@en ;
+    sh:description   "gerelateerd concept."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          skos:semanticRelation; .
+
+
+omg_ps:emissie_unique_casNumber
+    a                  sh:PropertyShape ;
+    rdfs:label         "uniek CAS nummer"@en ;
+    sh:name            "uniek CAS nummer"@en ;
+    sh:description     "Vanuit 1 CAS nummer kan slechts naar 1 stof worden verwezen."@en ;
+    rdfs:isDefinedBy   omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:nodeKind        sh:IRI ;
+    sh:targetObjectsOf dbo:casNumber ;
+    sh:path            [ sh:inversePath dbo:casNumber ] ;
+    sh:minCount        1 ;
+    sh:maxCount        1 .
+
+
+# Property Shapes
+omg_ps:schema_belongsTo
+    a                sh:PropertyShape ;
+    rdfs:label       "behoort tot dataset"@en ;
+    sh:name          "behoort tot dataset"@en ;
+    sh:description   "De relatie tussen een conceptschema en de dataset waartoe het behoort."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints-limited, omg_voc:emissie-ap-constraints-limited ;
+    sh:nodeKind      sh:IRI ;
+    sh:minCount      1 ;
+    sh:path          xkos:belongsTo .
+
+
+
+omg_ps:emissie_broader
+    a                sh:PropertyShape ;
+    rdfs:label       "breder concept"@en ;
+    sh:name          "breder concept"@en ;
+    sh:description   "De relatie tussen een concept en een breder, minder specifiek concept binnen hetzelfde schema."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          skos:broader .
+
+omg_ps:emissie_narrower
+    a                sh:PropertyShape ;
+    rdfs:label       "specifieker concept"@en ;
+    sh:name          "specifieker concept"@en ;
+    sh:description   "De relatie tussen een concept en een nauwer, specifieker concepten binnen hetzelfde schema."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:class         skos:Concept ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          skos:narrower; .
+
+omg_ps:emissie_narrowerTransitive
+    a                sh:PropertyShape ;
+    rdfs:label       "specifieker concept"@en ;
+    sh:name          "specifieker concept"@en ;
+    sh:description   "De relatie tussen een concept en een nauwer, specifieker concepten binnen hetzelfde schema."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:class         skos:Concept ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          skos:narrowerTransitive; .
+
+omg_ps:emissie_mappingRelation
+    a                sh:PropertyShape ;
+    rdfs:label       "relatie"@en ;
+    sh:name          "relatie"@en ;
+    sh:description   ""@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:class         skos:Concept ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          skos:mappingRelation; .
+
+
+omg_ps:emissie_inchikey
+    a                sh:PropertyShape ;
+    rdfs:label       "InChIKey"@en ;
+    sh:name          "InChIKey"@en ;
+    sh:description   "InChIKey is een formaat met een vaste lengte die rechtstreeks is afgeleid van InChI. Het is gebaseerd op een sterke hash (SHA-256-algoritme) van een InChI-string."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:datatype      xsd:string ;
+    sh:maxCount      1 ;
+    sh:minCount      1 ;
+    sh:property      omg_ps:emissie_unique_inchikey ;
+    sh:nodeKind      sh:Literal ;
+    sh:path          dbp:inchikey .
+
+
+omg_ps:emissie_unique_inchikey
+    a                  sh:PropertyShape ;
+    rdfs:label         "unieke InChIKey"@en ;
+    sh:name            "unieke InChIKey"@en ;
+    sh:description     "Vanuit 1 InChIKey kan slechts naar 1 stof worden verwezen."@en ;
+    rdfs:isDefinedBy   omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:nodeKind        sh:IRI ;
+    sh:targetObjectsOf dbp:inchikey ;
+    sh:path            [ sh:inversePath dbp:inchikey ] ;
+    sh:minCount        1 ;
+    sh:maxCount        1 .
+
+
+
+omg_ps:emissie_altLabel
+    a                sh:PropertyShape ;
+    rdfs:label       "alternatief label"@en ;
+    sh:name          "alternatief label"@en ;
+    sh:description   "Een alternatief lexicaal label voor een bepaalde bron."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:datatype      rdf:langString ;
+    sh:languageIn    ( "nl" "en" ) ;
+    sh:nodeKind      sh:Literal ;
+    sh:path          skos:altLabel .
+
+
+
+omg_ps:emissie_collection_member
+    a                sh:PropertyShape ;
+    rdfs:label       "onderdeel"@en ;
+    sh:name          "onderdeel"@en ;
+    sh:description   "Een collectie heeft minstens 1 onderdeel."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:class         skos:Concept ;
+    sh:minCount      1 ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          skos:member .
+
+omg_ps:emissie_topConceptOf
+    a                sh:PropertyShape ;
+    rdfs:label       "topconcept van"@en ;
+    sh:name          "topconcept van"@en ;
+    sh:description   "De relatie tussen een concept en het schema, waarvan het een topconcept is."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:class         skos:ConceptScheme ;
+    sh:maxCount      1 ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          skos:topConceptOf .
+
+omg_ps:emissie_exactMatch
+    a                sh:PropertyShape ;
+    rdfs:label       "heeft exacte overeenkomst"@en ;
+    sh:name          "heeft exacte overeenkomst"@en ;
+    sh:description   "skos:exactMatch wordt gebruikt om twee concepten te koppelen, wat aangeeft dat er een hoge mate van vertrouwen bestaat dat de concepten onderling uitwisselbaar kunnen worden gebruikt in een breed scala aan toepassingen voor het ophalen van informatie. skos:exactMatch is een transitieve eigenschap en is een subeigenschap van skos:closeMatch"@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          skos:exactMatch .
+
+omg_ps:emissie_closeMatch
+    a                sh:PropertyShape ;
+    rdfs:label       "heeft nauwe overeenkomst"@en ;
+    sh:name          "heeft nauw verwante overeenkomst"@en ;
+    sh:description   "skos:closeMatch wordt gebruikt om twee concepten te koppelen, wat aangeeft dat er een hoge mate van vertrouwen bestaat dat de concepten onderling uitwisselbaar kunnen worden gebruikt in een breed scala aan toepassingen voor het ophalen van informatie. skos:exactMatch is een transitieve eigenschap en is een subeigenschap van skos:closeMatch"@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          skos:closeMatch .
+
+
+omg_ps:emissie_theme
+    a                sh:PropertyShape ;
+    rdfs:label       "thema"@en ;
+    sh:name          "thema"@en ;
+    sh:description   "verwijzing naar een concept uit http://www.eionet.europa.eu/gemet"@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          dcat:theme .
+
+omg_ps:emissie_narrowMatch
+    a                sh:PropertyShape ;
+    rdfs:label       "heeft specifiekere overeenkomst"@en ;
+    sh:name          "heeft specifiekere overeenkomst"@en ;
+    sh:description   "skos:narrowMatch wordt gebruikt om een concept binnen het ene schema te koppelen met een specifieker concept binnen een ander schema."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          skos:narrowMatch .
+
+omg_ps:emissie_notation
+    a                sh:PropertyShape ;
+    rdfs:label       "notatie"@en ;
+    sh:name          "notatie"@en ;
+    sh:description   "Een notatie, ook wel classificatiecode genoemd, is een reeks tekens zoals \"PCB151\" of \"EtFOSA\" die wordt gebruikt om een stof op unieke wijze te identificeren binnen de context van dit schema."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:datatype      xsd:string ;
+    sh:nodeKind      sh:Literal ;
+    sh:property      omg_ps:emissie_unique_notation ;
+    sh:path          skos:notation .
+
+omg_ps:emissie_unique_notation
+    a                  sh:PropertyShape ;
+    rdfs:label         "unieke notatie"@en ;
+    sh:name            "unieke notatie"@en ;
+    sh:description     "Een notatie, ook wel classificatiecode genoemd, is een reeks tekens zoals \"PCB151\" of \"EtFOSA\" die wordt gebruikt om een stof op unieke wijze te identificeren binnen de context van dit schema. Er kan vanuit verschillende classificatiesystemen, met meerdere notaties verwezen worden naar een stof, maar een notatie is uniek voor een stof, ttz. vanuit 1 notatie kan slechts naar 1 stof worden verwezen."@en ;
+    rdfs:isDefinedBy   omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:nodeKind        sh:IRI ;
+    sh:targetObjectsOf skos:notation ;
+    sh:path            [ sh:inversePath skos:notation ] ;
+    sh:minCount        1 ;
+    sh:maxCount        1 .
+
+
+omg_ps:emissie_schema_hasTopConcept
+    a                sh:PropertyShape ;
+    rdfs:label       "heeft topconcept"@en ;
+    sh:name          "heeft topconcept"@en ;
+    sh:description   "Verbindt een conceptschema met een concept dat bovenaan in een 'broader/narrower' hierarchie staat en voorziet aldus een ingang tot die hierarchie."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:class         skos:Concept ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          skos:hasTopConcept .
+
+omg_ps:emissie_comment
+    a                sh:PropertyShape ;
+    rdfs:label       "commentaar"@en ;
+    sh:name          "commentaar"@en ;
+    sh:description   "Binnen dit schema wordt skos:comment gebruikt om de relatie, in tekstformaat, naar wetgeving en analysemethodes te leggen, die betrekking hebben op de fysico-chemische eigenschap. Dit tekstformaat wordt op termijn vervangen door linken naar 'resources'."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:datatype      rdf:langString ;
+    sh:languageIn    ( "nl" ) ;
+    sh:nodeKind      sh:Literal ;
+    sh:path          rdfs:comment .
+
+omg_ps:emissie_note
+    a                sh:PropertyShape ;
+    rdfs:label       "nota"@en ;
+    sh:name          "nota"@en ;
+    sh:description   "Een nota."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:datatype      rdf:langString ;
+    sh:languageIn    ( "nl" ) ;
+    sh:nodeKind      sh:Literal ;
+    sh:path          skos:note .
+
+
+
+omg_ps:emissie_seeAlso
+    a                sh:PropertyShape ;
+    rdfs:label       "zie ook"@en ;
+    sh:name          "zie ook"@en ;
+    sh:description   "Een verwijzing naar een gelijkaardige 'resource' of een document over het onderwerp."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:maxCount      1 ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          rdfs:seeAlso .
+
+omg_ps:emissie_rdf_type
+    a                sh:PropertyShape ;
+    rdfs:label       "rdf type"@en ;
+    sh:name          "rdf type"@en ;
+    sh:description   "Aanduiding dat een bron een instantie van een bepaalde klasse is."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:maxCount      1 ;
+    sh:minCount      1 ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          rdf:type .
+
+omg_ps:col_cs_rdf_type
+    a                sh:PropertyShape ;
+    rdfs:label       "rdf type"@en ;
+    sh:name          "rdf type"@en ;
+    sh:description   "Aanduiding dat een bron een instantie van een bepaalde klasse is."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:maxCount      1 ;
+    sh:minCount      1 ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          rdf:type .
+
+
+
+
+omg_ps:emissie_definition
+    a                sh:PropertyShape ;
+    rdfs:label       "definitie"@en ;
+    sh:name          "definitie"@en ;
+    sh:description   "Een uitspraak over de betekenis van het concept, de collectie of het schema."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:datatype      rdf:langString ;
+    sh:languageIn    ( "nl" "en" ) ;
+    sh:maxCount      1 ;
+    sh:nodeKind      sh:Literal ;
+    sh:path          skos:definition .
+
+
+
+omg_ps:emissie_prefLabel
+    a                sh:PropertyShape ;
+    rdfs:label       "voorkeurslabel"@en ;
+    sh:name          "voorkeurslabel"@en ;
+    sh:description   "Het voorkeurslabel in de Nederlandse taal. Slechts 1 voorkeurslabel is toegelaten."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:datatype      rdf:langString ;
+    sh:languageIn    ( "nl" "en") ;
+    sh:uniqueLang true ;
+    sh:maxCount      2 ;
+    sh:minCount      1 ;
+    sh:nodeKind      sh:Literal ;
+    sh:path          skos:prefLabel .
+
+
+
+omg_ps:conceptscheme_prefLabel
+    a                sh:PropertyShape ;
+    rdfs:label       "voorkeurslabel"@en ;
+    sh:name          "voorkeurslabel"@en ;
+    sh:description   "Het voorkeurslabel."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:datatype      rdf:langString ;
+    sh:languageIn    ( "en" "nl" ) ;
+    sh:uniqueLang true ;
+    sh:maxCount      2 ;
+    sh:minCount      1 ;
+    sh:nodeKind      sh:Literal ;
+    sh:path          skos:prefLabel .
+
+
+omg_ps:emissie_inScheme
+    a                sh:PropertyShape ;
+    rdfs:label       "is in schema"@en ;
+    sh:name          "is in schema"@en ;
+    sh:description   "Drukt de relatie uit tussen een 'resource' en het schema dat het bevat."@en ;
+    rdfs:isDefinedBy omg_ont:emissie-ap-constraints, omg_voc:emissie-ap-constraints ;
+    sh:class         skos:ConceptScheme ;
+    sh:maxCount      1 ;
+    sh:minCount      1 ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          skos:inScheme .

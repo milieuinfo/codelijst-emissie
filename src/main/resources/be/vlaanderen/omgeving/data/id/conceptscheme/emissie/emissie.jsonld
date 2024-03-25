@@ -1,704 +1,742 @@
 {
-    "@graph": [
-        {
-            "@id": "coe:lozingswijze_imjv",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Collectie lozingswijzen imjv."
-            },
-            "skos:member": [
-                {
-                    "@id": "cli:lozend"
-                },
-                {
-                    "@id": "cli:oppompend"
-                },
-                {
-                    "@id": "cli:transfer"
-                }
-            ],
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Lozingswijze zoals gedefinieerd in het Integraal Milieujaarverslag"
-            },
-            "dc:identifier": "co_lozingswijze_imjv",
-            "@type": "skos:Collection"
-        },
-        {
-            "@id": "cli:lozend",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Lozend"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Het water wordt geloosd in oppervlaktewater (rechtstreeks of via riolering die nog niet is aangesloten op een RWZI"
-            },
-            "dc:identifier": "Lozend",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "cli:oppompend",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Oppompend"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Dit betreft oppervlaktewater dat wordt opgepompt"
-            },
-            "dc:identifier": "Oppompend",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "cli:transfer",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Transfer"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Het water wordt na het verlaten van het bedrijfsterrein nog gezuiverd in een openbare of industriële waterzuiveringsinstallatie"
-            },
-            "dc:identifier": "Transfer",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "vlcs:emissie",
-            "skos:hasTopConcept": [
-                {
-                    "@id": "cli:oppompend"
-                },
-                {
-                    "@id": "ce:geleide_emissie"
-                },
-                {
-                    "@id": "cl:grondwater"
-                },
-                {
-                    "@id": "cl:rwzi"
-                },
-                {
-                    "@id": "cl:rwa"
-                },
-                {
-                    "@id": "cl:intern"
-                },
-                {
-                    "@id": "ce:doorzet_emissie"
-                },
-                {
-                    "@id": "cl:oopw"
-                },
-                {
-                    "@id": "ce:abnormale_emissie"
-                },
-                {
-                    "@id": "ce:lekverliezen"
-                },
-                {
-                    "@id": "cl:ow_indir"
-                },
-                {
-                    "@id": "cl:irwzi"
-                },
-                {
-                    "@id": "cl:brutolozing"
-                },
-                {
-                    "@id": "ce:fugitieve_emissie"
-                },
-                {
-                    "@id": "cli:transfer"
-                },
-                {
-                    "@id": "cl:ow_dir"
-                },
-                {
-                    "@id": "cl:septischmateriaal"
-                },
-                {
-                    "@id": "cl:abnormalelozing"
-                },
-                {
-                    "@id": "ce:fakkel_emissie"
-                },
-                {
-                    "@id": "ce:andere_niet_geleide_emissie"
-                },
-                {
-                    "@id": "cl:iwzi"
-                },
-                {
-                    "@id": "ce:diffuse_emissie"
-                },
-                {
-                    "@id": "cl:geleidelozing"
-                },
-                {
-                    "@id": "cli:lozend"
-                },
-                {
-                    "@id": "cl:nettolozing"
-                }
-            ],
-            "dc:identifier": "emissie",
-            "@type": "skos:ConceptScheme",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Codelijst emissietype."
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Een type van een emissie"
-            }
-        },
-        {
-            "@id": "cl:irwzi",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "IRWZI"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Influent RWZI"
-            },
-            "dc:identifier": "IRWZI",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ce:andere_niet_geleide_emissie",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Andere niet-geleide emissie"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "dc:identifier": "andere_niet_geleide_emissie",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "coe:lozingswijze",
-            "skos:member": [
-                {
-                    "@id": "cl:geleidelozing"
-                },
-                {
-                    "@id": "cl:ow_indir"
-                },
-                {
-                    "@id": "cl:intern"
-                },
-                {
-                    "@id": "cl:grondwater"
-                },
-                {
-                    "@id": "cl:rwzi"
-                },
-                {
-                    "@id": "cl:septischmateriaal"
-                },
-                {
-                    "@id": "cl:ow_dir"
-                },
-                {
-                    "@id": "cl:oopw"
-                },
-                {
-                    "@id": "cl:iwzi"
-                },
-                {
-                    "@id": "cl:abnormalelozing"
-                },
-                {
-                    "@id": "cl:irwzi"
-                },
-                {
-                    "@id": "cl:rwa"
-                },
-                {
-                    "@id": "cl:nettolozing"
-                },
-                {
-                    "@id": "cl:brutolozing"
-                }
-            ],
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "dc:identifier": "co_lozingswijze",
-            "@type": "skos:Collection",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Collectie lozingswijzen"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Wijze waarop het water geloosd wordt."
-            }
-        },
-        {
-            "@id": "cl:geleidelozing",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Geleide lozing"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "som van alle vrachten van lozingspunten van het type ‘Lozend’ en ‘Transfer’"
-            },
-            "dc:identifier": "geleidelozing",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "cl:ow_indir",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "OW INDIR"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Lozing op riolering die ongezuiverd loost in het oppervlaktewater"
-            },
-            "dc:identifier": "OW_INDIR",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "cl:intern",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Intern"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Lozing in een exploitatie"
-            },
-            "dc:identifier": "Intern",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "cl:grondwater",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Grondwater"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Lozing in grondwater"
-            },
-            "dc:identifier": "Grondwater",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "cl:rwzi",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "RWZI"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Lozing op riolering die gezuiverd wordt in een publieke waterzuivering"
-            },
-            "dc:identifier": "RWZI",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "cl:septischmateriaal",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Septisch Materiaal"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Aanvoer van septisch materiaal naar een RWZI"
-            },
-            "dc:identifier": "SeptischMateriaal",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "cl:ow_dir",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "OW DIR"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Lozing direct in oppervlaktewater"
-            },
-            "dc:identifier": "OW_DIR",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "cl:oopw",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "OOpw"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Opgenomen oppervlaktewater"
-            },
-            "dc:identifier": "OOpw",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "cl:iwzi",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "IWZI"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Lozing naar industriële waterzuiveringsinstallatie"
-            },
-            "dc:identifier": "IWZI",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "cl:abnormalelozing",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Abnormale lozing"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Lozing die gebeurt tijdens abnormale omstandigheden"
-            },
-            "dc:identifier": "abnormalelozing",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "cl:rwa",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "RWA"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Lozing in de een regenweerafvoer"
-            },
-            "dc:identifier": "RWA",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "cl:nettolozing",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Netto lozing"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Bruto lozing min de som van alle vrachten van lozingspunten van het type ‘Oppompend’"
-            },
-            "dc:identifier": "nettolozing",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "cl:brutolozing",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Bruto lozing"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "som van de geleide lozingen en de abnormale lozingen"
-            },
-            "dc:identifier": "brutolozing",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ce:lekverliezen",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Lekverliezen"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "TO DO"
-            },
-            "dc:identifier": "lekverliezen",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ce:diffuse_emissie",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Diffuse emissie"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen."
-            },
-            "dc:identifier": "diffuse_emissie",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ce:geleide_emissie",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Geleide emissie"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald. "
-            },
-            "dc:identifier": "geleide_emissie",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ce:fugitieve_emissie",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Fugitieve emissie"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen)."
-            },
-            "dc:identifier": "fugitieve_emissie",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ce:abnormale_emissie",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Abnormale emissie"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "dc:identifier": "abnormale_emissie",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "coe:emissie",
-            "dc:identifier": "co_emissie",
-            "skos:member": [
-                {
-                    "@id": "ce:abnormale_emissie"
-                },
-                {
-                    "@id": "ce:diffuse_emissie"
-                },
-                {
-                    "@id": "ce:fugitieve_emissie"
-                },
-                {
-                    "@id": "ce:lekverliezen"
-                },
-                {
-                    "@id": "ce:geleide_emissie"
-                },
-                {
-                    "@id": "ce:doorzet_emissie"
-                },
-                {
-                    "@id": "ce:andere_niet_geleide_emissie"
-                },
-                {
-                    "@id": "ce:fakkel_emissie"
-                }
-            ],
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Collectie types emissie lucht."
-            },
-            "@type": "skos:Collection",
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Een type van een emissie"
-            }
-        },
-        {
-            "@id": "ce:doorzet_emissie",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Doorzet emissie"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "TO DO"
-            },
-            "dc:identifier": "doorzet_emissie",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ce:fakkel_emissie",
-            "skos:topConceptOf": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Fakkel emissie"
-            },
-            "skos:inScheme": {
-                "@id": "vlcs:emissie"
-            },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "TO DO"
-            },
-            "dc:identifier": "fakkel_emissie",
-            "@type": "skos:Concept"
-        }
-    ],
     "@context": {
-        "cli": "https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/",
-        "ce": "https://data.omgeving.vlaanderen.be/id/concept/emissie/",
-        "gemet": "http://www.eionet.europa.eu/gemet/concept/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "cl": "https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "vlcs": "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
-        "dct": "http://purl.org/dc/terms/",
-        "coe": "https://data.omgeving.vlaanderen.be/id/collection/emissie/",
+        "collections": {
+            "@type": "@id",
+            "@reverse": "member"
+        },
+        "id": "@id",
+        "type": {
+            "@id": "@type",
+            "@type": "@id"
+        },
+        "source": {
+            "@id": "http://purl.org/dc/terms/source",
+            "@type": "@id"
+        },
+        "sparql-service-description-name": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#name",
+            "@type": "@id"
+        },
+        "identifier": {
+            "@id": "http://purl.org/dc/terms/identifier",
+            "@type": "@id"
+        },
+        "hasVersion": {
+            "@id": "http://purl.org/dc/terms/hasVersion",
+            "@type": "@id"
+        },
+        "isVersionOf": {
+            "@id": "http://purl.org/dc/terms/isVersionOf",
+            "@type": "@id"
+        },
+        "label": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+            "@language": "nl"
+        },
+        "distribution": {
+            "@id": "http://www.w3.org/ns/dcat#distribution",
+            "@type": "@id"
+        },
+        "alternative": {
+            "@id": "http://purl.org/dc/terms/alternative",
+            "@language": "nl"
+        },
+        "description": {
+            "@id": "http://purl.org/dc/terms/description",
+            "@language": "nl"
+        },
+        "spatial": {
+            "@id": "http://purl.org/dc/terms/spatial",
+            "@type": "@id"
+        },
+        "page": {
+            "@id": "http://xmlns.com/foaf/0.1/page",
+            "@type": "@id"
+        },
+        "theme": {
+            "@id": "http://www.w3.org/ns/dcat#theme",
+            "@type": "@id"
+        },
+        "title": {
+            "@id": "http://purl.org/dc/terms/title",
+            "@language": "nl"
+        },
+        "landingPage": {
+            "@id": "http://www.w3.org/ns/dcat#landingPage",
+            "@type": "@id"
+        },
+        "rightsHolder": {
+            "@id": "http://purl.org/dc/terms/rightsHolder",
+            "@type": "@id"
+        },
+        "language": "http://publications.europa.eu/resource/authority/language/",
+        "accrualPeriodicity": {
+            "@id": "http://purl.org/dc/terms/accrualPeriodicity",
+            "@type": "@id"
+        },
+        "publisher": {
+            "@id": "http://purl.org/dc/terms/publisher",
+            "@type": "@id"
+        },
+        "dct.language": {
+            "@id": "http://purl.org/dc/terms/language",
+            "@type": "@id"
+        },
+        "contactPoint": {
+            "@id": "http://www.w3.org/ns/dcat#contactPoint",
+            "@type": "@id"
+        },
+        "temporal": {
+            "@id": "http://purl.org/dc/terms/temporal",
+            "@type": "@id"
+        },
+        "issued": {
+            "@id": "http://purl.org/dc/terms/issued",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "accessRights": {
+            "@id": "http://purl.org/dc/terms/accessRights",
+            "@type": "@id"
+        },
+        "license": {
+            "@id": "http://purl.org/dc/terms/license",
+            "@type": "@id"
+        },
+        "accessURL": {
+            "@id": "http://www.w3.org/ns/dcat#accessURL",
+            "@type": "@id"
+        },
+        "compressFormat": {
+            "@id": "http://www.w3.org/ns/dcat#compressFormat",
+            "@type": "@id"
+        },
+        "downloadURL": {
+            "@id": "http://www.w3.org/ns/dcat#downloadURL",
+            "@type": "@id"
+        },
+        "mediaType": {
+            "@id": "http://www.w3.org/ns/dcat#mediaType",
+            "@type": "@id"
+        },
+        "format": {
+            "@id": "http://purl.org/dc/terms/format",
+            "@type": "@id"
+        },
+        "versionInfo": {
+            "@id": "http://spdx.org/rdf/terms#versionInfo"
+        },
+        "packageName": {
+            "@id": "http://spdx.org/rdf/terms#packageName"
+        },
+        "packageFileName": {
+            "@id": "http://spdx.org/rdf/terms#packageFileName"
+        },
+        "downloadLocation": {
+            "@id": "http://spdx.org/rdf/terms#downloadLocation",
+            "@type": "@id"
+        },
+        "relationshipType_packageOf": {
+            "@id": "http://spdx.org/rdf/terms#relationshipType_packageOf",
+            "@type": "@id"
+        },
+        "availableGraphs": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#availableGraphs",
+            "@type": "@id"
+        },
+        "resultFormat": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#resultFormat",
+            "@type": "@id"
+        },
+        "feature": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#feature",
+            "@type": "@id"
+        },
+        "supportedLanguage": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#supportedLanguage",
+            "@type": "@id"
+        },
+        "url": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#url",
+            "@type": "@id"
+        },
+        "comment": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
+            "@language": "nl"
+        },
+        "defaultDataset": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#defaultDataset",
+            "@type": "@id"
+        },
+        "endpoint": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#endpoint",
+            "@type": "@id"
+        },
+        "namedGraph": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#namedGraph",
+            "@type": "@id"
+        },
+        "homepage": {
+            "@id": "http://xmlns.com/foaf/0.1/homepage",
+            "@type": "@id"
+        },
+        "service": {
+            "@id": "http://www.w3.org/ns/dcat#service",
+            "@type": "@id"
+        },
+        "rootResource": {
+            "@id": "http://rdfs.org/ns/void#rootResource",
+            "@type": "@id"
+        },
+        "dataset": {
+            "@id": "http://www.w3.org/ns/dcat#dataset",
+            "@type": "@id"
+        },
+        "servesDataset": {
+            "@id": "http://www.w3.org/ns/dcat#servesDataset",
+            "@type": "@id"
+        },
+        "endpointDescription": {
+            "@id": "http://www.w3.org/ns/dcat#endpointDescription",
+            "@type": "@id"
+        },
+        "endpointURL": {
+            "@id": "http://www.w3.org/ns/dcat#endpointURL",
+            "@type": "@id"
+        },
+        "conformsTo": {
+            "@id": "http://purl.org/dc/terms/conformsTo",
+            "@type": "@id"
+        },
+        "dc.identifier": {
+            "@id": "http://purl.org/dc/elements/1.1/identifier"
+        },
+        "dc.language": {
+            "@id": "http://purl.org/dc/elements/1.1/language",
+            "@language": "nl"
+        },
+        "dc.source": {
+            "@id": "http://purl.org/dc/elements/1.1/source"
+        },
+        "version": {
+            "@id": "http://www.w3.org/2002/07/owl#versionInfo"
+        },
+        "name": {
+            "@id": "http://spdx.org/rdf/terms#name"
+        },
+        "seeAlso": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+            "@type": "@id"
+        },
+        "inScheme": {
+            "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+            "@type": "@id"
+        },
+        "topConceptOf": {
+            "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+            "@type": "@id"
+        },
+        "hasTopConcept": {
+            "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+            "@type": "@id"
+        },
+        "uri": {
+            "@id": "@id",
+            "@type": "@id"
+        },
+        "prefLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+            "@language": "nl"
+        },
+        "notation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "altLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "@language": "nl"
+        },
+        "note": {
+            "@id": "http://www.w3.org/2004/02/skos/core#note",
+            "@language": "nl"
+        },
+        "definition": {
+            "@id": "http://www.w3.org/2004/02/skos/core#definition",
+            "@language": "nl"
+        },
+        "member": {
+            "@id": "http://www.w3.org/2004/02/skos/core#member",
+            "@type": "@id"
+        },
+        "casNumber": {
+            "@id": "http://dbpedia.org/ontology/casNumber"
+        },
+        "references": {
+            "@id": "http://purl.org/dc/terms/references",
+            "@type": "@id"
+        },
+        "isReferencedBy": {
+            "@id": "http://purl.org/dc/terms/isReferencedBy",
+            "@type": "@id"
+        },
+        "relation": {
+            "@id": "http://purl.org/dc/terms/relation",
+            "@type": "@id"
+        },
+        "graph": {
+            "@id": "@graph"
+        },
+        "broaderTransitive": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+            "@type": "@id"
+        },
+        "broadMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broadMatch",
+            "@type": "@id"
+        },
+        "closeMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#closeMatch",
+            "@type": "@id"
+        },
+        "exactMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+            "@type": "@id"
+        },
+        "mappingRelation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#mappingRelation",
+            "@type": "@id"
+        },
+        "broader": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broader",
+            "@type": "@id"
+        },
+        "narrower": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrower",
+            "@type": "@id"
+        },
+        "narrowerTransitive": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+            "@type": "@id"
+        },
+        "narrowMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+            "@type": "@id"
+        },
+        "semanticRelation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation",
+            "@type": "@id"
+        },
+        "belongsTo": {
+            "@id": "http://rdf-vocabulary.ddialliance.org/xkos#belongsTo",
+            "@type": "@id"
+        },
+        "related": {
+            "@id": "http://www.w3.org/2004/02/skos/core#related",
+            "@type": "@id"
+        },
+        "dc_elements_identifier": {
+            "@id": "http://purl.org/dc/elements/1.1/identifier"
+        },
+        "concept": "https://data.omgeving.vlaanderen.be/id/concept/emissie/",
+        "collectie": "https://data.omgeving.vlaanderen.be/id/collection/emissie/",
+        "access_right": "http://publications.europa.eu/resource/authority/access-right/",
+        "adms": "http://www.w3.org/ns/adms#",
+        "assettype": "http://purl.org/adms/assettype/",
+        "chemische_stof": "https://data.omgeving.vlaanderen.be/id/concept/chemische_stof/",
+        "compound": "https://pubchem.ncbi.nlm.nih.gov/compound/",
+        "conceptscheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
+        "country": "http://publications.europa.eu/resource/authority/country/",
+        "datasets": "https://datasets.omgeving.vlaanderen.be/",
+        "datatheme_be": "http://vocab.belgif.be/auth/datatheme/",
+        "datatheme_eu": "http://publications.europa.eu/resource/authority/data-theme/",
+        "dbo": "http://dbpedia.org/ontology/",
         "dcat": "http://www.w3.org/ns/dcat#",
-        "dc": "http://purl.org/dc/elements/1.1/"
-    }
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "dct": "http://purl.org/dc/terms/",
+        "eurovoc": "http://eurovoc.europa.eu/",
+        "file_type": "http://publications.europa.eu/resource/authority/file-type/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "formats": "http://www.w3.org/ns/formats/",
+        "frequency": "http://publications.europa.eu/resource/authority/frequency/",
+        "gemet": "http://www.eionet.europa.eu/gemet/concept/",
+        "licence": "http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/",
+        "emissie": "https://data.omgeving.vlaanderen.be/id/concept/emissie/",
+        "lozingswijze": "https://data.omgeving.vlaanderen.be/id/concept/lozingswijze/",
+        "lozingswijze_imjv": "https://data.omgeving.vlaanderen.be/id/concept/lozingswijze_imjv/",
+        "metadata": "https://data.omgeving.vlaanderen.be/ns/metadata#",
+        "omg_catalog": "https://data.omgeving.vlaanderen.be/id/catalog/",
+        "omg_catalog_doc": "https://data.omgeving.vlaanderen.be/doc/catalog/",
+        "omg_collection": "https://data.omgeving.vlaanderen.be/id/collection/",
+        "omg_dataservice": "https://data.omgeving.vlaanderen.be/id/dataservice/",
+        "omg_dataset_doc": "https://data.omgeving.vlaanderen.be/doc/dataset/",
+        "omg_dataset": "https://data.omgeving.vlaanderen.be/id/dataset/",
+        "omg_distribution_doc": "https://data.omgeving.vlaanderen.be/doc/distribution/",
+        "omg_distribution": "https://data.omgeving.vlaanderen.be/id/distribution/",
+        "omg_graphcollection": "https://data.omgeving.vlaanderen.be/id/graphcollection/",
+        "omg_graph": "https://data.omgeving.vlaanderen.be/id/graph/",
+        "omg_id": "https://data.omgeving.vlaanderen.be/id/",
+        "omg_named_graph": "https://data.omgeving.vlaanderen.be/id/namedgraph/",
+        "omg_ontology": "https://data.omgeving.vlaanderen.be/id/ontology/",
+        "omg_package": "https://data.omgeving.vlaanderen.be/id/package/",
+        "omg_periodoftime": "https://data.omgeving.vlaanderen.be/id/periodoftime/",
+        "omg_service": "https://data.omgeving.vlaanderen.be/id/service/",
+        "omg_vcard": "https://data.omgeving.vlaanderen.be/id/vcard/",
+        "ovo": "http://data.vlaanderen.be/id/organisatie/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "repo": "https://repo.omgeving.vlaanderen.be/artifactory/release/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "sd": "http://www.w3.org/ns/sparql-service-description#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "ssd": "http://www.w3.org/ns/sparql-service-description#",
+        "ts": "http://www.w3.org/ns/formats/",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "void": "http://rdfs.org/ns/void#",
+        "wise": "http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/",
+        "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "@base": "https://data.omgeving.vlaanderen.be/id/concept/emissie/"
+    },
+    "graph": [
+        {
+            "id": "collectie:emissie",
+            "type": "skos:Collection",
+            "definition": "Een type van een emissie",
+            "inScheme": "conceptscheme:emissie",
+            "member": [
+                "concept:abnormale_emissie",
+                "concept:andere_niet_geleide_emissie",
+                "concept:diffuse_emissie",
+                "concept:doorzet_emissie",
+                "concept:fakkel_emissie",
+                "concept:fugitieve_emissie",
+                "concept:geleide_emissie",
+                "concept:lekverliezen"
+            ],
+            "notation": "co_emissie",
+            "note": "Een type van een emissie",
+            "prefLabel": "Collectie types emissie lucht."
+        },
+        {
+            "id": "collectie:lozingswijze",
+            "type": "skos:Collection",
+            "definition": "Wijze waarop het water geloosd wordt.",
+            "inScheme": "conceptscheme:emissie",
+            "member": [
+                "lozingswijze:abnormalelozing",
+                "lozingswijze:brutolozing",
+                "lozingswijze:geleidelozing",
+                "lozingswijze:grondwater",
+                "lozingswijze:intern",
+                "lozingswijze:irwzi",
+                "lozingswijze:iwzi",
+                "lozingswijze:nettolozing",
+                "lozingswijze:oopw",
+                "lozingswijze:ow_dir",
+                "lozingswijze:ow_indir",
+                "lozingswijze:rwa",
+                "lozingswijze:rwzi",
+                "lozingswijze:septischmateriaal"
+            ],
+            "notation": "co_lozingswijze",
+            "note": "Wijze waarop het water geloosd wordt.",
+            "prefLabel": "Collectie lozingswijzen"
+        },
+        {
+            "id": "collectie:lozingswijze_imjv",
+            "type": "skos:Collection",
+            "definition": "Lozingswijze zoals gedefinieerd in het Integraal Milieujaarverslag",
+            "inScheme": "conceptscheme:emissie",
+            "member": [
+                "lozingswijze_imjv:lozend",
+                "lozingswijze_imjv:oppompend",
+                "lozingswijze_imjv:transfer"
+            ],
+            "notation": "co_lozingswijze_imjv",
+            "note": "Lozingswijze zoals gedefinieerd in het Integraal Milieujaarverslag",
+            "prefLabel": "Collectie lozingswijzen imjv."
+        },
+        {
+            "id": "concept:abnormale_emissie",
+            "type": "skos:Concept",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "abnormale_emissie",
+            "prefLabel": "Abnormale emissie",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "concept:andere_niet_geleide_emissie",
+            "type": "skos:Concept",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "andere_niet_geleide_emissie",
+            "prefLabel": "Andere niet-geleide emissie",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "concept:diffuse_emissie",
+            "type": "skos:Concept",
+            "definition": "Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen.",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "diffuse_emissie",
+            "note": "Emissies, in een andere vorm dan van afgassen, van vluchtige organische stoffen in lucht, bodem of water alsmede oplosmiddelen die zich in enig product bevinden. Hieronder zijn begrepen de niet-opgevangen emissies die via ramen, deuren, ventilatiekanalen, ontluchtingen en soortgelijke openingen in het milieu terechtkomen.",
+            "prefLabel": "Diffuse emissie",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "concept:doorzet_emissie",
+            "type": "skos:Concept",
+            "definition": "TO DO",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "doorzet_emissie",
+            "note": "TO DO",
+            "prefLabel": "Doorzet emissie",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "concept:fakkel_emissie",
+            "type": "skos:Concept",
+            "definition": "TO DO",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "fakkel_emissie",
+            "note": "TO DO",
+            "prefLabel": "Fakkel emissie",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "concept:fugitieve_emissie",
+            "type": "skos:Concept",
+            "definition": "De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen).",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "fugitieve_emissie",
+            "note": "De emissie van vluchtige organische stoffen (exclusief methaan) door lekverliezen van apparaten en leiding (onderdelen).",
+            "prefLabel": "Fugitieve emissie",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "concept:geleide_emissie",
+            "type": "skos:Concept",
+            "definition": "Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald.",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "geleide_emissie",
+            "note": "Emissies afkomstig van een schoorsteen waarvoor bepaalde fysische kenmerken bestaan (ligging, afmetingen) en waarvan het debiet kan worden bepaald.",
+            "prefLabel": "Geleide emissie",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "concept:lekverliezen",
+            "type": "skos:Concept",
+            "definition": "TO DO",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "lekverliezen",
+            "note": "TO DO",
+            "prefLabel": "Lekverliezen",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze:abnormalelozing",
+            "type": "skos:Concept",
+            "definition": "Lozing die gebeurt tijdens abnormale omstandigheden",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "abnormalelozing",
+            "note": "Lozing die gebeurt tijdens abnormale omstandigheden",
+            "prefLabel": "Abnormale lozing",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze:brutolozing",
+            "type": "skos:Concept",
+            "definition": "som van de geleide lozingen en de abnormale lozingen",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "brutolozing",
+            "note": "som van de geleide lozingen en de abnormale lozingen",
+            "prefLabel": "Bruto lozing",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze:geleidelozing",
+            "type": "skos:Concept",
+            "definition": "som van alle vrachten van lozingspunten van het type ‘Lozend’ en ‘Transfer’",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "geleidelozing",
+            "note": "som van alle vrachten van lozingspunten van het type ‘Lozend’ en ‘Transfer’",
+            "prefLabel": "Geleide lozing",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze:grondwater",
+            "type": "skos:Concept",
+            "definition": "Lozing in grondwater",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "Grondwater",
+            "note": "Lozing in grondwater",
+            "prefLabel": "Grondwater",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze:intern",
+            "type": "skos:Concept",
+            "definition": "Lozing in een exploitatie",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "Intern",
+            "note": "Lozing in een exploitatie",
+            "prefLabel": "Intern",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze:irwzi",
+            "type": "skos:Concept",
+            "definition": "Influent RWZI",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "IRWZI",
+            "note": "Influent RWZI",
+            "prefLabel": "IRWZI",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze:iwzi",
+            "type": "skos:Concept",
+            "definition": "Lozing naar industriële waterzuiveringsinstallatie",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "IWZI",
+            "note": "Lozing naar industriële waterzuiveringsinstallatie",
+            "prefLabel": "IWZI",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze:nettolozing",
+            "type": "skos:Concept",
+            "definition": "Bruto lozing min de som van alle vrachten van lozingspunten van het type ‘Oppompend’",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "nettolozing",
+            "note": "Bruto lozing min de som van alle vrachten van lozingspunten van het type ‘Oppompend’",
+            "prefLabel": "Netto lozing",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze:oopw",
+            "type": "skos:Concept",
+            "definition": "Opgenomen oppervlaktewater",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "OOpw",
+            "note": "Opgenomen oppervlaktewater",
+            "prefLabel": "OOpw",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze:ow_dir",
+            "type": "skos:Concept",
+            "definition": "Lozing direct in oppervlaktewater",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "OW_DIR",
+            "note": "Lozing direct in oppervlaktewater",
+            "prefLabel": "OW DIR",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze:ow_indir",
+            "type": "skos:Concept",
+            "definition": "Lozing op riolering die ongezuiverd loost in het oppervlaktewater",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "OW_INDIR",
+            "note": "Lozing op riolering die ongezuiverd loost in het oppervlaktewater",
+            "prefLabel": "OW INDIR",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze:rwa",
+            "type": "skos:Concept",
+            "definition": "Lozing in de een regenweerafvoer",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "RWA",
+            "note": "Lozing in de een regenweerafvoer",
+            "prefLabel": "RWA",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze:rwzi",
+            "type": "skos:Concept",
+            "definition": "Lozing op riolering die gezuiverd wordt in een publieke waterzuivering",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "RWZI",
+            "note": "Lozing op riolering die gezuiverd wordt in een publieke waterzuivering",
+            "prefLabel": "RWZI",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze:septischmateriaal",
+            "type": "skos:Concept",
+            "definition": "Aanvoer van septisch materiaal naar een RWZI",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "SeptischMateriaal",
+            "note": "Aanvoer van septisch materiaal naar een RWZI",
+            "prefLabel": "Septisch Materiaal",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze_imjv:lozend",
+            "type": "skos:Concept",
+            "definition": "Het water wordt geloosd in oppervlaktewater (rechtstreeks of via riolering die nog niet is aangesloten op een RWZI",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "Lozend",
+            "note": "Het water wordt geloosd in oppervlaktewater (rechtstreeks of via riolering die nog niet is aangesloten op een RWZI",
+            "prefLabel": "Lozend",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze_imjv:oppompend",
+            "type": "skos:Concept",
+            "definition": "Dit betreft oppervlaktewater dat wordt opgepompt",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "Oppompend",
+            "note": "Dit betreft oppervlaktewater dat wordt opgepompt",
+            "prefLabel": "Oppompend",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "lozingswijze_imjv:transfer",
+            "type": "skos:Concept",
+            "definition": "Het water wordt na het verlaten van het bedrijfsterrein nog gezuiverd in een openbare of industriële waterzuiveringsinstallatie",
+            "inScheme": "conceptscheme:emissie",
+            "notation": "Transfer",
+            "note": "Het water wordt na het verlaten van het bedrijfsterrein nog gezuiverd in een openbare of industriële waterzuiveringsinstallatie",
+            "prefLabel": "Transfer",
+            "topConceptOf": "conceptscheme:emissie"
+        },
+        {
+            "id": "conceptscheme:emissie",
+            "type": "skos:ConceptScheme",
+            "belongsTo": "omg_dataset:codelijst-emissie",
+            "definition": "Een type van een emissie",
+            "hasTopConcept": [
+                "concept:abnormale_emissie",
+                "concept:andere_niet_geleide_emissie",
+                "concept:diffuse_emissie",
+                "concept:doorzet_emissie",
+                "concept:fakkel_emissie",
+                "concept:fugitieve_emissie",
+                "concept:geleide_emissie",
+                "concept:lekverliezen",
+                "lozingswijze:abnormalelozing",
+                "lozingswijze:brutolozing",
+                "lozingswijze:geleidelozing",
+                "lozingswijze:grondwater",
+                "lozingswijze:intern",
+                "lozingswijze:irwzi",
+                "lozingswijze:iwzi",
+                "lozingswijze:nettolozing",
+                "lozingswijze:oopw",
+                "lozingswijze:ow_dir",
+                "lozingswijze:ow_indir",
+                "lozingswijze:rwa",
+                "lozingswijze:rwzi",
+                "lozingswijze:septischmateriaal",
+                "lozingswijze_imjv:lozend",
+                "lozingswijze_imjv:oppompend",
+                "lozingswijze_imjv:transfer"
+            ],
+            "notation": "emissie",
+            "note": "Een type van een emissie",
+            "prefLabel": "Codelijst emissietype."
+        }
+    ]
 }
