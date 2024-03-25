@@ -67,7 +67,8 @@ skos:Concept  rdf:type     "rdfs:Resource";
         skos:notation      "http://www.w3.org/2001/XMLSchema#string";
         skos:note          "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString";
         skos:prefLabel     "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString";
-        skos:topConceptOf  skos:ConceptScheme .
+        skos:topConceptOf  skos:ConceptScheme;
+        dcat:theme         "rdfs:Resource" .
 
 skos:Collection  rdf:type  "rdfs:Resource";
         skos:definition  "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString";
