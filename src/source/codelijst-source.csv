@@ -28,4 +28,3 @@ collectie:emissie,co_emissie,Collectie types emissie lucht.,Een type van een emi
 collectie:lozingswijze,co_lozingswijze,Collectie lozingswijzen,Wijze waarop het water geloosd wordt.,,conceptscheme:emissie,,,
 collectie:lozingswijze_imjv,co_lozingswijze_imjv,Collectie lozingswijzen imjv.,Lozingswijze zoals gedefinieerd in het Integraal Milieujaarverslag,,conceptscheme:emissie,,,
 conceptscheme:emissie,emissie,Codelijst emissietype.,Een type van een emissie,,,,omg_dataset:codelijst-emissie,
-conceptscheme:emissie,emissie,Codelijst emissietype.,Een type van een emissie,,,,omg_dataset:codelijst-emissie,
