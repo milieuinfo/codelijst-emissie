@@ -1,3 +1,5 @@
+@prefix concept: <https://data.omgeving.vlaanderen.be/id/concept/emissie/>.
+@prefix collectie: <https://data.omgeving.vlaanderen.be/id/collection/emissie/>.
 @prefix access_right: <http://publications.europa.eu/resource/authority/access-right/>.
 @prefix adms: <http://www.w3.org/ns/adms#>.
 @prefix assettype: <http://purl.org/adms/assettype/>.
@@ -57,21 +59,21 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-<https://data.omgeving.vlaanderen.be/id/collection/emissie/emissie> a skos:Collection;
+collectie:emissie a skos:Collection;
     skos:definition "Een type van een emissie"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:member emissie:abnormale_emissie, emissie:andere_niet_geleide_emissie, emissie:diffuse_emissie, emissie:doorzet_emissie, emissie:fakkel_emissie, emissie:fugitieve_emissie, emissie:geleide_emissie, emissie:lekverliezen;
     skos:notation "co_emissie";
     skos:note "Een type van een emissie"@nl;
     skos:prefLabel "Collectie types emissie lucht."@nl.
-<https://data.omgeving.vlaanderen.be/id/collection/emissie/lozingswijze> a skos:Collection;
+collectie:lozingswijze a skos:Collection;
     skos:definition "Wijze waarop het water geloosd wordt."@nl;
     skos:inScheme conceptscheme:emissie;
     skos:member lozingswijze:abnormalelozing, lozingswijze:brutolozing, lozingswijze:geleidelozing, lozingswijze:grondwater, lozingswijze:intern, lozingswijze:irwzi, lozingswijze:iwzi, lozingswijze:nettolozing, lozingswijze:oopw, lozingswijze:ow_dir, lozingswijze:ow_indir, lozingswijze:rwa, lozingswijze:rwzi, lozingswijze:septischmateriaal;
     skos:notation "co_lozingswijze";
     skos:note "Wijze waarop het water geloosd wordt."@nl;
     skos:prefLabel "Collectie lozingswijzen"@nl.
-<https://data.omgeving.vlaanderen.be/id/collection/emissie/lozingswijze_imjv> a skos:Collection;
+collectie:lozingswijze_imjv a skos:Collection;
     skos:definition "Lozingswijze zoals gedefinieerd in het Integraal Milieujaarverslag"@nl;
     skos:inScheme conceptscheme:emissie;
     skos:member lozingswijze_imjv:lozend, lozingswijze_imjv:oppompend, lozingswijze_imjv:transfer;

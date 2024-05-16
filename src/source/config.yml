@@ -143,3 +143,5 @@ prefixes :
   wise: http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/
   xkos: http://rdf-vocabulary.ddialliance.org/xkos#
   xsd: http://www.w3.org/2001/XMLSchema#
+deploy:
+  virtuoso: virtuoso-algemeen
