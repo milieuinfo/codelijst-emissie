@@ -70,7 +70,7 @@ metadata :
     dct.language : http://publications.europa.eu/resource/authority/language/NLD
     landingPage  : https://data.omgeving.vlaanderen.be/doc/catalog/codelijst.html
   catalog :
-    uri : https://data.omgeving.vlaanderen.be/id/catalog
+    uri : https://data.omgeving.vlaanderen.be/id/catalog/codelijst
     type: http://www.w3.org/ns/dcat#Catalog
   dataset :     
     temporal : https://data.omgeving.vlaanderen.be/id/periodoftime/dataset_omg
